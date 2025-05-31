@@ -28,7 +28,7 @@ export default function Header() {
                         <div className="relative group">
                             <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
                                 Why Walltik ?
-                                <ChevronDown className="ml-1 h-4 w-4" />
+                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
                             </button>
                             {/* Dropdown would go here */}
                         </div>
@@ -36,21 +36,21 @@ export default function Header() {
                         <div className="relative group">
                             <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
                                 Integrations
-                                <ChevronDown className="ml-1 h-4 w-4" />
+                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
                             </button>
                         </div>
 
                         <div className="relative group">
                             <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
                                 Suppliers
-                                <ChevronDown className="ml-1 h-4 w-4" />
+                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
                             </button>
                         </div>
 
                         <div className="relative group">
                             <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
                                 Resources
-                                <ChevronDown className="ml-1 h-4 w-4" />
+                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
                             </button>
                         </div>
 

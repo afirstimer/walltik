@@ -7,19 +7,19 @@ export default function FeaturesSection() {
             badge: "FULFILLMENT",
             title: "Seamless Integration",
             description: "Connect your TikTok Shop in seconds and sync data in real-time. Automate pricing, inventory updates, and order fulfillment to save time and reduce errors.",
-            image: "https://ext.same-assets.com/1385443775/1021503304.webp"
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png"
         },
         {
             badge: "AI TOOL",
             title: "Smart Analytics",
             description: "Gain deep insights into your sales, top products, and customer behavior",
-            image: "https://ext.same-assets.com/1385443775/1696470612.webp"
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688026/Gemini_Generated_Image_p73roep73roep73r_ukd9rs.png"
         },
         {
             badge: "MULTI-SHOP",
             title: "Multi-Shop Support",
             description: "Manage multiple TikTok Shops from a single account. All details like descriptions, images, and videos are added.",
-            image: "https://ext.same-assets.com/1385443775/1809768222.webp"
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688181/Gemini_Generated_Image_7tf4lc7tf4lc7tf4_kasfty.png"
         }
     ];
 
