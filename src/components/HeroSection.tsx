@@ -31,7 +31,7 @@ export default function HeroSection() {
                     <div className="relative">
                         <div className="relative z-10">
                             <img
-                                src="https://ext.same-assets.com/1385443775/563501939.png"
+                                src="https://res.cloudinary.com/dqg6ernew/image/upload/v1748666448/Gemini_Generated_Image_jmmp98jmmp98jmmp_bx3hqn.png"
                                 alt="TikTok Shop Automation"
                                 className="w-full h-auto"
                             />
