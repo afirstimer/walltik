@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
             role: "Online Retailer",
             image: "https://ext.same-assets.com/1385443775/3153332079.png",
             rating: 5,
-            text: "Walltik simplified my entire dropshipping workflow. The automated fulfillment is incredibly reliable."
+            text: "Walltik simplified my entire  workflow. The automated fulfillment is incredibly reliable."
         },
         {
             name: "Lisa Wang",
@@ -40,7 +40,7 @@ export default function TestimonialsSection() {
         },
         {
             name: "James Wilson",
-            role: "Dropshipping Expert",
+            role: " Expert",
             image: "https://ext.same-assets.com/1385443775/2282160975.png",
             rating: 5,
             text: "I've tried many automation tools, but Walltik is by far the most comprehensive and user-friendly platform."
@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
                 {/* CTA Section */}
                 <div className="mt-16 text-center bg-gradient-navy rounded-2xl p-12 text-white">
                     <h3 className="text-2xl font-bold mb-4">
-                        Get your AI-powered dropshipping store ready!
+                        Get your AI-powered  store ready!
                     </h3>
                     <p className="text-lg opacity-90 mb-8">
                         Join thousands of successful entrepreneurs using Walltik

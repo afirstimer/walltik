@@ -22,7 +22,7 @@ export default function Footer() {
             'TikTok Shop'
         ],
         resources: [
-            'Dropshipping Blog',
+            ' Blog',
             'Free Courses',
             'Help Center',
             'Affiliate Program',
@@ -56,7 +56,7 @@ export default function Footer() {
                             />
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            The all-in-one dropshipping automation platform trusted by over 100,000 entrepreneurs worldwide.
+                            The all-in-one  automation platform trusted by over 100,000 entrepreneurs worldwide.
                         </p>
                         <div className="flex space-x-4 mt-6">
                             <Link href="#" className="text-gray-400 hover:text-white">

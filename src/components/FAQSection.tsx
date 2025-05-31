@@ -11,7 +11,7 @@ export default function FAQSection() {
     const faqs = [
         {
             question: "What is Walltik TikTok Shop automation?",
-            answer: "Walltik TikTok Shop automation is a comprehensive platform that automates your entire TikTok shop dropshipping business. From product research and import to order fulfillment and customer service, we handle everything so you can focus on growing your business."
+            answer: "Walltik TikTok Shop automation is a comprehensive platform that automates your entire TikTok shop  business. From product research and import to order fulfillment and customer service, we handle everything so you can focus on growing your business."
         },
         {
             question: "How does the 1-click product import work?",
@@ -27,7 +27,7 @@ export default function FAQSection() {
         },
         {
             question: "Which suppliers does Walltik support?",
-            answer: "Walltik supports over 25 trusted global suppliers including AliExpress, Amazon, Walmart, CJ Dropshipping, Oberlo, and many more. We continuously add new suppliers to ensure you have access to the best products and fastest shipping times."
+            answer: "Walltik supports over 25 trusted global suppliers including AliExpress, Amazon, Walmart, CJ , Oberlo, and many more. We continuously add new suppliers to ensure you have access to the best products and fastest shipping times."
         },
         {
             question: "How does the AI marketing tool work?",
