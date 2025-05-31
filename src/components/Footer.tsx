@@ -50,7 +50,7 @@ export default function Footer() {
                     <div className="lg:col-span-1">
                         <div className="flex items-center mb-4">
                             <img
-                                src="https://ext.same-assets.com/1385443775/3910689515.svg"
+                                src="https://res.cloudinary.com/dqg6ernew/image/upload/v1748675920/ulkSAD01_suxiid.svg"
                                 alt="Walltik"
                                 className="h-8 w-auto brightness-0 invert"
                             />
