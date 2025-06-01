@@ -11,7 +11,7 @@ export default function EbayPage() {
     const heroTitle = {
         title1: "All-in-One",
         title2: "Software",
-        title3: "for E-commerce Sellers",
+        title3: "for EBay Sellers",
         description: "Unify and Simplify Your eBay Operations",
         image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777009/Generated_Image_5juua25juua25juu_oir8l2.png",
         url: ""
@@ -43,7 +43,6 @@ export default function EbayPage() {
             <Header />
             <main>
                 <HeroSection title={heroTitle} />
-                <TrustSection />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />

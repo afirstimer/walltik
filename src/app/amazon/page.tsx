@@ -11,8 +11,8 @@ export default function AmazonPage() {
     const heroTitle = {
         title1: "All-in-One",
         title2: "Software",
-        title3: "for E-commerce Sellers",
-        description: "Unify and Simplify Your eBay Operations",
+        title3: "for Amazon Sellers",
+        description: "Optimize and Automate Your Amazon Workflow",
         image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777336/Generated_Image_lp259wlp259wlp25_ofzjzo.png",
         url: ""
     }
@@ -20,20 +20,20 @@ export default function AmazonPage() {
     const features = [
         {
             badge: "FULFILLMENT",
-            title: "Sync Product Listings and Orders from eBay Automatically",
-            description: "Easily manage your eBay store with real-time syncing of listings, orders, and inventory. Automatically pull in product details, buyer info, shipping data, and transaction updates—no manual input required. Track all listing statuses and fulfillment progress from one centralized dashboard.",
+            title: "Real-Time Product and Order Sync",
+            description: "Seamless syncing of Amazon listings, inventory, and order data from multiple accounts and regions. Track order status, shipping progress, and customer messages in one dashboard. Automate order tagging, sorting, and batch actions.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png"
         },
         {
             badge: "AI TOOL",
-            title: " Consolidate Multichannel Operations in One Software System",
-            description: "Streamline operations by managing eBay, TikTok Shop, Amazon, and more from a single platform. Compare product performance across channels, manage customer messages, returns, and logistics in one place. Role-based access lets your team work efficiently by function.",
+            title: "Central Dashboard for Amazon Performance",
+            description: "View, filter, and process all incoming orders in one dashboard. Monitor order statuses: unpaid, ready to ship, shipped, completed, cancelled. Automate order tagging, sorting, and batch actions.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688026/Gemini_Generated_Image_p73roep73roep73r_ukd9rs.png"
         },
         {
             badge: "MULTI-SHOP",
-            title: "Instant Insights for Smarter Sourcing Decisions",
-            description: "Make smarter sourcing decisions with instant price and stock insights. Enter or bulk upload eBay product URLs to check real-time availability. Set price alerts and compare listings with Amazon or Walmart to uncover profitable arbitrage opportunities.",
+            title: "Multi-Account & Regional Support",
+            description: "Manage multiple Amazon seller accounts across regions (US, UK, EU) in one view. Track order status, shipping progress, and customer messages in one dashboard. Automate order tagging, sorting, and batch actions.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688181/Gemini_Generated_Image_7tf4lc7tf4lc7tf4_kasfty.png"
         }
     ];
@@ -43,7 +43,6 @@ export default function AmazonPage() {
             <Header />
             <main>
                 <HeroSection title={heroTitle} />
-                <TrustSection />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />

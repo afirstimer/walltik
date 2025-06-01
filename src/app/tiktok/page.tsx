@@ -11,8 +11,8 @@ export default function TiktokPage() {
     const heroTitle = {
         title1: "All-in-One",
         title2: "Software",
-        title3: "for E-commerce Sellers",
-        description: "Unify and Simplify Your eBay Operations",
+        title3: "for TikTok Sellers",
+        description: "Seamless Integration with TikTok Shop API",
         image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777422/Generated_Image_lq0n4alq0n4alq0n_qot3vr.png",
         url: ""
     }
@@ -20,20 +20,20 @@ export default function TiktokPage() {
     const features = [
         {
             badge: "FULFILLMENT",
-            title: "Sync Product Listings and Orders from eBay Automatically",
-            description: "Easily manage your eBay store with real-time syncing of listings, orders, and inventory. Automatically pull in product details, buyer info, shipping data, and transaction updates—no manual input required. Track all listing statuses and fulfillment progress from one centralized dashboard.",
+            title: "Manage Orders, Products, Revenues, and Shop Performance",
+            description: "View, filter, and process all incoming orders in one dashboard. Monitor order statuses: unpaid, ready to ship, shipped, completed, cancelled. Automate order tagging, sorting, and batch actions.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png"
         },
         {
             badge: "AI TOOL",
-            title: " Consolidate Multichannel Operations in One Software System",
-            description: "Streamline operations by managing eBay, TikTok Shop, Amazon, and more from a single platform. Compare product performance across channels, manage customer messages, returns, and logistics in one place. Role-based access lets your team work efficiently by function.",
+            title: " Product Management",
+            description: "Add/edit/delete products directly from the client interface. Sync product data across multiple TikTok Shops at once. Modify pricing, inventory, and product descriptions in bulk",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688026/Gemini_Generated_Image_p73roep73roep73r_ukd9rs.png"
         },
         {
             badge: "MULTI-SHOP",
-            title: "Instant Insights for Smarter Sourcing Decisions",
-            description: "Make smarter sourcing decisions with instant price and stock insights. Enter or bulk upload eBay product URLs to check real-time availability. Set price alerts and compare listings with Amazon or Walmart to uncover profitable arbitrage opportunities.",
+            title: "Revenue and Performance Analytics",
+            description: "Daily, weekly, and monthly sales overviews with breakdown by shop/product. Conversion rate tracking: view traffic, clicks, and sales funnel. Revenue heatmaps and charts to identify best-selling items and peak hours.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688181/Gemini_Generated_Image_7tf4lc7tf4lc7tf4_kasfty.png"
         }
     ];
@@ -43,7 +43,6 @@ export default function TiktokPage() {
             <Header />
             <main>
                 <HeroSection title={heroTitle} />
-                <TrustSection />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />
