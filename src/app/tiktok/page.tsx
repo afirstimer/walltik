@@ -22,19 +22,19 @@ export default function TiktokPage() {
             badge: "FULFILLMENT",
             title: "Manage Orders, Products, Revenues, and Shop Performance",
             description: "View, filter, and process all incoming orders in one dashboard. Monitor order statuses: unpaid, ready to ship, shipped, completed, cancelled. Automate order tagging, sorting, and batch actions.",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png"
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748792541/Generated_Image_x367yax367yax367_k9r4dv.png"
         },
         {
             badge: "AI TOOL",
             title: " Product Management",
             description: "Add/edit/delete products directly from the client interface. Sync product data across multiple TikTok Shops at once. Modify pricing, inventory, and product descriptions in bulk",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688026/Gemini_Generated_Image_p73roep73roep73r_ukd9rs.png"
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748792639/Generated_Image_1icp8l1icp8l1icp_iueiyf.png"
         },
         {
             badge: "MULTI-SHOP",
             title: "Revenue and Performance Analytics",
             description: "Daily, weekly, and monthly sales overviews with breakdown by shop/product. Conversion rate tracking: view traffic, clicks, and sales funnel. Revenue heatmaps and charts to identify best-selling items and peak hours.",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688181/Gemini_Generated_Image_7tf4lc7tf4lc7tf4_kasfty.png"
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748792677/Generated_Image_6uhnay6uhnay6uhn_qcnff0.png"
         }
     ];
 

@@ -21,13 +21,13 @@ export default function EbayPage() {
         {
             badge: "FULFILLMENT",
             title: "Sync Product Listings and Orders from eBay Automatically",
-            description: "Easily manage your eBay store with real-time syncing of listings, orders, and inventory. Automatically pull in product details, buyer info, shipping data, and transaction updates—no manual input required. Track all listing statuses and fulfillment progress from one centralized dashboard.",
+            description: "Automatically sync product listings and orders from eBay. Track order status, shipping progress, and customer messages in one dashboard. Automate order tagging, sorting, and batch actions.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png"
         },
         {
             badge: "AI TOOL",
             title: " Consolidate Multichannel Operations in One Software System",
-            description: "Streamline operations by managing eBay, TikTok Shop, Amazon, and more from a single platform. Compare product performance across channels, manage customer messages, returns, and logistics in one place. Role-based access lets your team work efficiently by function.",
+            description: "Streamline operations by managing eBay, Amazon, and Walmart in one unified software system. Automate order tagging, sorting, and batch actions. Track order status, shipping progress, and customer messages in one dashboard.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688026/Gemini_Generated_Image_p73roep73roep73r_ukd9rs.png"
         },
         {
