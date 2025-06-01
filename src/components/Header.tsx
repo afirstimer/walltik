@@ -36,8 +36,35 @@ export default function Header() {
                         <div className="relative group">
                             <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
                                 Integrations
-                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
+                                <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
+                            {/* Dropdown Menu */}
+                            <div className="absolute left-0 mt-2 w-96 bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all z-50 p-4 grid grid-cols-3 gap-4">
+                                <div className="flex items-center space-x-2 hover:bg-gray-50 rounded-md p-2 cursor-pointer">
+                                    <Link href="/tiktok" className='flex items-center'>
+                                        <img src="/TikTok-Shop.svg" alt="TikTok" className="h-6 w-6" />
+                                        <span className="text-sm text-gray-700">
+                                            TikTok
+                                        </span>
+                                    </Link>
+                                </div>
+                                <div className="flex items-center space-x-2 hover:bg-gray-50 rounded-md p-2 cursor-pointer">
+                                    <Link href="/amazon" className='flex items-center'>
+                                        <img src="/amazon-icon.svg" alt="Amazon" className="h-6 w-6" />
+                                        <span className="text-sm text-gray-700">
+                                            Amazon
+                                        </span>
+                                    </Link>
+                                </div>
+                                <div className="flex items-center space-x-2 hover:bg-gray-50 rounded-md p-2 cursor-pointer">
+                                    <Link href="/ebay" className='flex items-center'>
+                                        <img src="/ebay-icon.svg" alt="eBay" className="h-6 w-6" />
+                                        <span className="text-sm text-gray-700">
+                                            eBay
+                                        </span>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="relative group">

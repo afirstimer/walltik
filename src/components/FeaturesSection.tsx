@@ -1,28 +1,18 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { features } from 'process';
 
-export default function FeaturesSection() {
-    const features = [
-        {
-            badge: "FULFILLMENT",
-            title: "Seamless Integration",
-            description: "Connect your TikTok Shop in seconds and sync data in real-time. Automate pricing, inventory updates, and order fulfillment to save time and reduce errors.",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png"
-        },
-        {
-            badge: "AI TOOL",
-            title: "Smart Analytics",
-            description: "Gain deep insights into your sales, top products, and customer behavior",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688026/Gemini_Generated_Image_p73roep73roep73r_ukd9rs.png"
-        },
-        {
-            badge: "MULTI-SHOP",
-            title: "Multi-Shop Support",
-            description: "Manage multiple TikTok Shops from a single account. All details like descriptions, images, and videos are added.",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748688181/Gemini_Generated_Image_7tf4lc7tf4lc7tf4_kasfty.png"
-        }
-    ];
+type Feature = {
+    title: string;
+    description: string;
+    image: string;
+    badge: string;
+}
+type FeatureSectionProps = {
+    features: Feature[],
+};
 
+export default function FeaturesSection({ features }: FeatureSectionProps) {
     return (
         <section className="py-20 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

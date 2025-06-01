@@ -1,6 +1,19 @@
 import { Button } from '@/components/ui/button';
 
-export default function HeroSection() {
+
+type HeroTitle = {
+    title1: string;
+    title2: string;
+    title3: string;
+    description: string;
+    image: string;
+    url: string;
+}
+type HeroSectionProps = {
+    title: HeroTitle
+}
+
+export default function HeroSection({ title }: HeroSectionProps) {
     return (
         <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20 lg:py-32">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,13 +21,14 @@ export default function HeroSection() {
                     {/* Left Content */}
                     <div className="text-center lg:text-left">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                            Make All-in-One{' '}
-                            <span className="text-gradient">TikTok Shop</span>{' '}
-                            Management
+                            {title.title1} <br></br>{' '}
+                            <span className="text-gradient">{title.title2}</span>{' '}
+                            <br></br>
+                            {title.title3}
                         </h1>
 
                         <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-                            Automate your operations, track performance, and scale your business — all from one powerful dashboard.
+                            {title.description}
                         </p>
 
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -31,7 +45,7 @@ export default function HeroSection() {
                     <div className="relative">
                         <div className="relative z-10">
                             <img
-                                src="https://res.cloudinary.com/dqg6ernew/image/upload/v1748666448/Gemini_Generated_Image_jmmp98jmmp98jmmp_bx3hqn.png"
+                                src={title.image}
                                 alt="TikTok Shop Automation"
                                 className="w-full h-auto"
                             />
