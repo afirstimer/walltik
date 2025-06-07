@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Walltik | TikTok Shop Automation",
+  title: "WallTik | E-Commerce Automation Platform",
   description: "Automate your TikTok shop business with Walltik",
 };
 
