@@ -4,12 +4,12 @@ export default function Footer() {
     const footerLinks = {
         product: [
             'Why Walltik?',
-            'Product finding',
-            'Ads Spy tools',
-            'AI built Shopify store',
-            'Products importer',
-            'Fulfilled by Walltik',
-            'Print on demand'
+            // 'Product finding',
+            // 'Ads Spy tools',
+            // 'AI built Shopify store',
+            // 'Products importer',
+            // 'Fulfilled by Walltik',
+            // 'Print on demand'
         ],
         integrations: [
             'Shopify',

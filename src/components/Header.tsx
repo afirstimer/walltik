@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X, Puzzle, ShoppingCart, RefreshCcw, RefreshCw } from 'lucide-react';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,61 +25,85 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-8">
-                        <div className="relative group">
+                        <div className="group">
                             <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
                                 Why Walltik ?
-                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
+                                <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
-                            {/* Dropdown would go here */}
+
+                            <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all z-50 pl-28 m-0 pt-5 pb-5  space-y-3 grid grid-cols-5">
+                                <div className="flex items-start space-x-2 pl-28"></div>
+                                <div className="flex items-start space-x-2 p-3">
+                                    <Link href="/features/extension-services" className='flex items-center'>
+                                        <Puzzle className="w-5 h-5 text-purple-600" />
+                                        <p className="text-sm text-gray-700 ml-2">
+                                            Extension Services
+                                        </p>
+                                    </Link>
+                                </div>
+                                <div className="flex items-start space-x-2 p-3">
+                                    <Link href="/features/buying-service" className='flex items-center'>
+                                        <ShoppingCart className="w-5 h-5 text-purple-600" />
+                                        <p className="text-sm text-gray-700 ml-2">
+                                            Buying Service
+                                        </p>
+                                    </Link>
+                                </div>
+                                <div className="flex items-start space-x-2 p-3">
+                                    <Link href="/features/automated-update-tracking" className='flex items-center'>
+                                        <RefreshCw className="w-5 h-5 text-purple-600" />
+                                        <p className="text-sm text-gray-700 ml-2">
+                                            Automated Update Tracking
+                                        </p>
+                                    </Link>
+                                </div>
+                                <div className="flex items-start space-x-2 pr-28"></div>
+                            </div>
                         </div>
 
-                        <div className="relative group">
+                        <div className="group">
                             <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
                                 Integrations
                                 <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
                             {/* Dropdown Menu */}
-                            <div className="absolute left-0 mt-2 w-96 bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all z-50 p-4 grid grid-cols-3 gap-4">
-                                <div className="flex items-center space-x-2 hover:bg-gray-50 rounded-md p-2 cursor-pointer">
+                            <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all pl-28 m-0 pt-5 pb-5 grid grid-cols-5 gap-1">
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md pl-28 cursor-pointer"></div>
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
                                     <Link href="/tiktok" className='flex items-center'>
-                                        <img src="/TikTok-Shop.svg" alt="TikTok" className="h-6 w-6" />
-                                        <span className="text-sm text-gray-700">
+                                        <img src="/TikTok-Shop.svg" alt="TikTok" className="h-8 w-8" />
+                                        <span className="text-xl text-gray-700 ml-2">
                                             TikTok
                                         </span>
                                     </Link>
                                 </div>
-                                <div className="flex items-center space-x-2 hover:bg-gray-50 rounded-md p-2 cursor-pointer">
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
                                     <Link href="/amazon" className='flex items-center'>
-                                        <img src="/amazon-icon.svg" alt="Amazon" className="h-6 w-6" />
-                                        <span className="text-sm text-gray-700">
+                                        <img src="/amazon-icon.svg" alt="Amazon" className="h-8 w-8" />
+                                        <span className="text-xl text-gray-700 ml-2">
                                             Amazon
                                         </span>
                                     </Link>
                                 </div>
-                                <div className="flex items-center space-x-2 hover:bg-gray-50 rounded-md p-2 cursor-pointer">
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
                                     <Link href="/ebay" className='flex items-center'>
-                                        <img src="/ebay-icon.svg" alt="eBay" className="h-6 w-6" />
-                                        <span className="text-sm text-gray-700">
+                                        <img src="/ebay-icon.svg" alt="eBay" className="h-8 w-8" />
+                                        <span className="text-xl text-gray-700 ml-2">
                                             eBay
                                         </span>
                                     </Link>
                                 </div>
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md pl-28 cursor-pointer"></div>
                             </div>
                         </div>
 
                         <div className="relative group">
-                            <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
+                            <Link href="/suppliers" className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
                                 Suppliers
                                 {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
-                            </button>
+                            </Link>
                         </div>
 
-                        <div className="relative group">
-                            <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
-                                Resources
-                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
-                            </button>
-                        </div>
 
                         <Link href="/pricing" className="text-gray-700 hover:text-gray-900 font-medium">
                             Pricing
@@ -110,36 +134,38 @@ export default function Header() {
                 </div>
 
                 {/* Mobile menu */}
-                {isMenuOpen && (
-                    <div className="lg:hidden">
-                        <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
-                            <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                Why Walltik ?
-                            </Link>
-                            <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                Integrations
-                            </Link>
-                            <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                Suppliers
-                            </Link>
-                            <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                Resources
-                            </Link>
-                            <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                Pricing
-                            </Link>
-                            <div className="pt-4 space-y-2">
-                                <Button variant="ghost" className="w-full justify-start">
-                                    Sign In
-                                </Button>
-                                <Button className="w-full bg-gradient-purple-pink text-white">
-                                    Get started
-                                </Button>
+                {
+                    isMenuOpen && (
+                        <div className="lg:hidden">
+                            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
+                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                    Why Walltik ?
+                                </Link>
+                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                    Integrations
+                                </Link>
+                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                    Suppliers
+                                </Link>
+                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                    Resources
+                                </Link>
+                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                    Pricing
+                                </Link>
+                                <div className="pt-4 space-y-2">
+                                    <Button variant="ghost" className="w-full justify-start">
+                                        Sign In
+                                    </Button>
+                                    <Button className="w-full bg-gradient-purple-pink text-white">
+                                        Get started
+                                    </Button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                )}
-            </div>
-        </header>
+                    )
+                }
+            </div >
+        </header >
     );
 }
