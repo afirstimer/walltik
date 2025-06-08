@@ -10,6 +10,10 @@ export default function Header() {
     const { data: session } = useSession();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const showUnderDev = () => {
+        alert('The feature is under maintenance');
+    }
+
     return (
         <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -114,19 +118,9 @@ export default function Header() {
 
                     {/* Action Buttons */}
                     <div className="hidden lg:flex items-center space-x-4">
-                        {session ? (
-                            <>
-                                <span className="mr-2">Hi, {session.user?.name}</span>
-                                <Button variant="ghost" className="text-gray-700 hover:text-gray-900" onClick={() => signOut()}>
-                                    Sign Out
-                                </Button>
-                            </>
-                        ) : (
-                            <Button variant="ghost" className="text-gray-700 hover:text-gray-900" onClick={() => signIn()}>
-                                Sign In
-                            </Button>
-                        )
-                        }
+                        <Button variant="ghost" className="text-gray-700 hover:text-gray-900" onClick={() => showUnderDev()}>
+                            Sign In
+                        </Button>
                         <Button className="bg-gradient-purple-pink text-white hover:opacity-90">
                             Get started
                         </Button>
