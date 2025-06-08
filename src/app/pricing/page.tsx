@@ -11,7 +11,34 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function PricingPage() {
-    const [billingPeriod, setBillingPeriod] = useState('annual');
+    const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'annual'>('monthly');
+    const pricing = [
+        {
+            title: "Import 200",
+            monthly: 19.9,
+            annual: 14.9, // 25% off
+            annualSavings: "$60",
+            description: "Our most basic automation features.",
+        },
+        {
+            title: "Starter 500",
+            monthly: 39.9,
+            annual: 29.9,
+            annualSavings: "$120",
+            description:
+                "A full-scale automation solution that is perfect for beginners creating a store.",
+            popular: true,
+        },
+        {
+            title: "Advanced 1K",
+            monthly: 59.9,
+            annual: 44.9,
+            annualSavings: "$180",
+            description:
+                "For experienced dropshippers who need more products and faster support.",
+        },
+    ];
+
 
     return (
         <div className="min-h-screen bg-[#f9fafa]">
@@ -40,7 +67,11 @@ export default function PricingPage() {
                     </div>
 
                     {/* Billing Toggle */}
-                    <Tabs value={billingPeriod} onValueChange={setBillingPeriod} className="mb-12">
+                    <Tabs value={billingPeriod} onValueChange={(value) => {
+                        if (value === "annual" || value === "monthly") {
+                            setBillingPeriod(value);
+                        }
+                    }} className="mb-12">
                         <TabsList className="grid w-fit grid-cols-2 mx-auto bg-gray-100">
                             <TabsTrigger value="annual" className="data-[state=active]:bg-white relative">
                                 Annual
@@ -54,56 +85,40 @@ export default function PricingPage() {
 
                     {/* Pricing Cards */}
                     <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                        {/* Import 200 Plan */}
-                        <Card className="relative border-2 border-gray-200 hover:border-[#c9215d] transition-all">
-                            <CardHeader className="text-center pb-4">
-                                <CardTitle className="text-lg font-semibold text-[#171734]">Import 200</CardTitle>
-                                <div className="text-4xl font-bold text-[#171734] mb-2">$19.90</div>
-                                <p className="text-sm text-gray-500">per month</p>
-                                <p className="text-sm text-[#30ad94]">Billed Annually - Save $84</p>
-                                <p className="text-sm text-gray-600 mt-2">Our most basic automation features.</p>
-                            </CardHeader>
-                            <CardContent>
-                                <Button className="w-full bg-[#c9215d] hover:bg-[#a91b50] text-white mb-4">
-                                    START NOW FOR $1
-                                </Button>
-                            </CardContent>
-                        </Card>
+                        {pricing.map((plan) => {
+                            const isAnnual = billingPeriod === "annual";
+                            const price = isAnnual ? plan.annual : plan.monthly;
 
-                        {/* Starter 500 Plan */}
-                        <Card className="relative border-2 border-[#c9215d] hover:border-[#c9215d] transition-all">
-                            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                                <Badge className="bg-[#c9215d] text-white px-4 py-1">Most Popular</Badge>
-                            </div>
-                            <CardHeader className="text-center pb-4 pt-8">
-                                <CardTitle className="text-lg font-semibold text-[#171734]">Starter 500</CardTitle>
-                                <div className="text-4xl font-bold text-[#171734] mb-2">$29.90</div>
-                                <p className="text-sm text-gray-500">per month</p>
-                                <p className="text-sm text-[#30ad94]">Billed Annually - Save $120</p>
-                                <p className="text-sm text-gray-600 mt-2">A full-scale  automation solution that is perfect for beginners creating a store.</p>
-                            </CardHeader>
-                            <CardContent>
-                                <Button className="w-full bg-[#c9215d] hover:bg-[#a91b50] text-white mb-4">
-                                    START NOW FOR $1
-                                </Button>
-                            </CardContent>
-                        </Card>
-
-                        {/* Advanced 1K Plan */}
-                        <Card className="relative border-2 border-gray-200 hover:border-[#c9215d] transition-all">
-                            <CardHeader className="text-center pb-4">
-                                <CardTitle className="text-lg font-semibold text-[#171734]">Advanced 1K</CardTitle>
-                                <div className="text-4xl font-bold text-[#171734] mb-2">$49.90</div>
-                                <p className="text-sm text-gray-500">per month</p>
-                                <p className="text-sm text-[#30ad94]">Billed Annually - Save $204</p>
-                                <p className="text-sm text-gray-600 mt-2">For experienced dropshippers who need more products and faster support.</p>
-                            </CardHeader>
-                            <CardContent>
-                                <Button className="w-full bg-[#c9215d] hover:bg-[#a91b50] text-white mb-4">
-                                    START NOW FOR $1
-                                </Button>
-                            </CardContent>
-                        </Card>
+                            return (
+                                <Card
+                                    key={plan.title}
+                                    className={`relative border-2 ${plan.popular ? "border-[#c9215d]" : "border-gray-200"
+                                        } hover:border-[#c9215d] transition-all`}
+                                >
+                                    {plan.popular && (
+                                        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                            <Badge className="bg-[#c9215d] text-white px-4 py-1">Most Popular</Badge>
+                                        </div>
+                                    )}
+                                    <CardHeader className="text-center pb-4 pt-8">
+                                        <CardTitle className="text-lg font-semibold text-[#171734]">{plan.title}</CardTitle>
+                                        <div className="text-4xl font-bold text-[#171734] mb-2">${price.toFixed(2)}</div>
+                                        <p className="text-sm text-gray-500">per month</p>
+                                        {isAnnual && (
+                                            <p className="text-sm text-[#30ad94]">
+                                                Billed Annually - Save {plan.annualSavings}
+                                            </p>
+                                        )}
+                                        <p className="text-sm text-gray-600 mt-2">{plan.description}</p>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Button className="w-full bg-[#c9215d] hover:bg-[#a91b50] text-white mb-4">
+                                            START NOW FOR $1
+                                        </Button>
+                                    </CardContent>
+                                </Card>
+                            );
+                        })}
 
                         {/* Need More Plan */}
                         <Card className="relative border-2 border-gray-200 hover:border-[#c9215d] transition-all">
@@ -131,6 +146,7 @@ export default function PricingPage() {
                             </CardContent>
                         </Card>
                     </div>
+
                 </div>
             </section>
 
@@ -216,7 +232,7 @@ export default function PricingPage() {
                             <CardContent className="p-8">
                                 <div className="flex items-center justify-center mb-6">
                                     <img
-                                        src="https://ext.same-assets.com/811604260/1825110299.jpeg"
+                                        src="https://res.cloudinary.com/dqg6ernew/image/upload/v1748675920/ulkSAD01_suxiid.svg"
                                         alt="AC Hampton"
                                         className="w-16 h-16 rounded-full"
                                     />
@@ -224,7 +240,7 @@ export default function PricingPage() {
                                 <blockquote className="text-lg text-gray-700 mb-6">
                                     "This is truly a one-stop-shop  app. Walltik is a step ahead of the game, offering automatic  with huge suppliers like Amazon, Wayfair & more."
                                 </blockquote>
-                                <cite className="text-[#171734] font-semibold">AC Hampton</cite>
+                                <cite className="text-[#171734] font-semibold">Walltik</cite>
                                 <div className="flex items-center justify-center mt-4">
                                     {[...Array(5)].map((_, i) => (
                                         <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />

@@ -8,7 +8,7 @@ const TermOfServicePage: React.FC = () => {
             <Header />
             <div className="max-w-5xl mx-auto px-4 py-8 text-primary text-[18px] font-normal leading-[25px] mb-5">
                 <h1 className="text-3xl font-bold mb-4 text-center">WallTik' terms & conditions</h1>
-                <p className="text-sm text-gray-500 mb-8">Last updated: August 22, 2022</p>
+                <p className="text-sm text-gray-500 mb-8">Last updated: November 05, 2024</p>
 
                 <p className="mb-4">
                     Welcome to walltik.com (hereinafter, the "Website") owned and managed by Denise Douthard Ltd., a limited liability company incorporated under the laws of the state of Israel (hereinafter, “WallTik”), “We” or “Us”).
