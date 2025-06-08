@@ -4,8 +4,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Menu, X, Puzzle, ShoppingCart, RefreshCcw, RefreshCw } from 'lucide-react';
+import { signIn, signOut, useSession } from "next-auth/react";
 
 export default function Header() {
+    const { data: session } = useSession();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
@@ -112,9 +114,19 @@ export default function Header() {
 
                     {/* Action Buttons */}
                     <div className="hidden lg:flex items-center space-x-4">
-                        <Button variant="ghost" className="text-gray-700 hover:text-gray-900">
-                            Sign In
-                        </Button>
+                        {session ? (
+                            <>
+                                <span className="mr-2">Hi, {session.user?.name}</span>
+                                <Button variant="ghost" className="text-gray-700 hover:text-gray-900" onClick={() => signOut()}>
+                                    Sign Out
+                                </Button>
+                            </>
+                        ) : (
+                            <Button variant="ghost" className="text-gray-700 hover:text-gray-900" onClick={() => signIn()}>
+                                Sign In
+                            </Button>
+                        )
+                        }
                         <Button className="bg-gradient-purple-pink text-white hover:opacity-90">
                             Get started
                         </Button>
