@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import FeaturesAboutSection from '@/components/FeaturesAboutSection';
 import FounderSection from '@/components/FounderSection';
 import CoreValueSection from '@/components/CoreValueSection';
+import TimelineSection from '@/components/TimelineSection';
 
 export default function AboutUsPage() {
     const heroTitle = {
@@ -43,6 +44,7 @@ export default function AboutUsPage() {
                 <HeroAboutSection title={heroTitle} />
                 <FeaturesAboutSection features={features} />
                 <CoreValueSection />
+                <TimelineSection />
                 <FounderSection />
                 <FAQSection />
             </main>

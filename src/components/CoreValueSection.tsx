@@ -1,30 +1,30 @@
-import { Gamepad2, Globe, Group, Lightbulb, Lock, PersonStandingIcon, Users } from "lucide-react";
+import { Cog, Gamepad2, Globe, Group, Lightbulb, Lock, PersonStandingIcon, Store, Telescope, Users } from "lucide-react";
 import Image from "next/image";
 
 export default function CoreValueSection() {
     const values = [
         {
-            name: "Freedom",
-            image: <Lock size={24} />,
+            name: "Connectivity",
+            image: <Store size={24} />,
             description:
-                "We automate the tedious learning curve for you, so you can focus on the extraordinary.",
+                "Price and stock monitoring tools that track real-time availability from platforms like Amazon, Walmart, and Sephora.",
         },
         {
             name: "Innovation",
             image: <Lightbulb size={24} />,
             description:
-                "We listen, innovate, and adapt. Your feedback drives us to keep our platform at the cutting edge, ensuring your dropshipping business is the best tool.",
+                "Product import and editing extensions, enabling fast listing creation and Flash Sale optimization.",
         },
         {
-            name: "Think BIG",
-            image: <Globe size={24} />,
+            name: "Automation",
+            image: <Cog size={24} />,
             description:
-                "Success requires growth and thinking BIG. We believe that you always need to play in the top 1% league and we're here to help you stay prepared.",
+                "Order checkout automation, saving time and reducing human error when fulfilling orders across multiple platforms.",
         },
         {
-            name: "Community",
-            image: <Users size={24} />,
-            description: "Our community connects you with other top sellers, and mentors to guide towards your goals."
+            name: "Communication",
+            image: <Telescope size={24} />,
+            description: "Telegram-based order notifications, improving responsiveness and operational awareness."
         }
     ];
 
@@ -50,7 +50,7 @@ export default function CoreValueSection() {
                     Our values
                 </h2>
                 <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">
-                    At Walltik, we have 4 values that help us stay true to our mission
+                    To further support its ecosystem, WallTik provides a set of value-added services including:
                 </p>
                 <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
                     {values.map((value) => (
