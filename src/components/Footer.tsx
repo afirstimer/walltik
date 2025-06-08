@@ -131,9 +131,6 @@ export default function Footer() {
                             <Link href="/terms-of-service" className="text-gray-400 hover:text-white text-sm">
                                 Terms of Service
                             </Link>
-                            <Link href="#" className="text-gray-400 hover:text-white text-sm">
-                                Cookie Policy
-                            </Link>
                         </div>
                     </div>
                 </div>
