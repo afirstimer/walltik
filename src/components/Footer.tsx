@@ -3,7 +3,9 @@ import Link from 'next/link';
 export default function Footer() {
     const footerLinks = {
         product: [
-            { name: 'Why Walltik?', href: '/features' },
+            { name: 'Extensions Services', href: '/features/extension-services' },
+            { name: 'Buying Services', href: '/features/buying-service' },
+            { name: 'Automated Update Tracking', href: '/features/automated-update-tracking' },
         ],
         integrations: [
             { name: 'eBay', href: '/ebay' },
