@@ -14,7 +14,7 @@ export default function PricingSection() {
             name: "Starter",
             products: "Import 200",
             monthlyPrice: 19.90,
-            annualPrice: 19.90,
+            annualPrice: 14.90,
             savings: 84,
             popular: false,
             features: [
@@ -33,10 +33,10 @@ export default function PricingSection() {
         },
         {
             name: "Advanced",
-            products: "400",
-            monthlyPrice: 34.90,
-            annualPrice: 34.90,
-            savings: 144,
+            products: "Start 500",
+            monthlyPrice: 39.90,
+            annualPrice: 29.90,
+            savings: 120,
             popular: true,
             features: [
                 "Everything in Starter",
@@ -50,10 +50,10 @@ export default function PricingSection() {
         },
         {
             name: "Master",
-            products: "800",
-            monthlyPrice: 54.90,
-            annualPrice: 54.90,
-            savings: 228,
+            products: "Advanced k",
+            monthlyPrice: 59.90,
+            annualPrice: 49.90,
+            savings: 180,
             popular: false,
             features: [
                 "Everything in Advanced",
