@@ -12,14 +12,14 @@ export default function FounderSection() {
         {
             name: "Branson Farrell",
             role: "Co-Founder & CTO",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749362508/6208222463427461199_q0l9fx.jpg",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749483184/6208222463427461203_cr99y3.jpg",
             description:
                 "Branson Farrell, a tech prodigy, saw the potential in dropshipping and built the fastest, most powerful tool to streamline operations and drive growth.",
         },
         {
             name: "Luke Gill",
             role: "CMO",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749362509/6208222463427461198_mzklpb.jpg",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749483185/6208222463427461202_tgmjof.jpg",
             description:
                 "Luke Gill, a marketing pro with a passion for e-commerce, partnered with Branson Farrell and transformed Walltik from a small startup into the world’s #1 dropshipping automation platform.",
         },
