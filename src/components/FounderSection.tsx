@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function FounderSection() {
     const founders = [
-        {
-            name: "Denise Douthard",
-            role: "Co-Founder & CEO",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749362509/6208222463427461197_igzcqx.jpg", // replace with real URLs
-            description:
-                "Denise Douthard, at 14, she launched his entrepreneurial journey by selling his first product through dropshipping. Seeing its high-reward potential, she dove in and built his career around the model.",
-        },
+        // {
+        //     name: "Denise Douthard",
+        //     role: "Co-Founder & CEO",
+        //     image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749362509/6208222463427461197_igzcqx.jpg", // replace with real URLs
+        //     description:
+        //         "Denise Douthard, at 14, she launched his entrepreneurial journey by selling his first product through dropshipping. Seeing its high-reward potential, she dove in and built his career around the model.",
+        // },
         {
             name: "Branson Farrell",
             role: "Co-Founder & CTO",
@@ -32,9 +32,9 @@ export default function FounderSection() {
                     Meet the leadership team
                 </h2>
                 <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">
-                    Meet the 3 brothers behind Walltik, the future of e-commerce sourcing.
+                    Meet people behind Walltik, the future of e-commerce sourcing.
                 </p>
-                <div className="mt-10 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+                <div className="mt-10 grid gap-8 sm:grid-cols-2 md:grid-cols-2">
                     {founders.map((founder) => (
                         <div
                             key={founder.name}
