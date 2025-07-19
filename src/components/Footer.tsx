@@ -38,8 +38,8 @@ export default function Footer() {
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Denise Douthard LLC
-                            640 Westminster Ave Apt 2, Venice, CA, 90291
-                            Email: support@walltik.com
+                            <br />640 Westminster Ave Apt 2, Venice, CA, 90291
+                            <br />Email: support@walltik.com
                             Phone: (+1)-510-345-5402
                         </p>
                         <div className="flex space-x-4 mt-6">

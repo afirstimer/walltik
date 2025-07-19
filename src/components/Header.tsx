@@ -114,6 +114,10 @@ export default function Header() {
                         <Link href="/pricing" className="text-gray-700 hover:text-gray-900 font-medium">
                             Pricing
                         </Link>
+
+                        <Link href="/contact-us" className="text-gray-700 hover:text-gray-900 font-medium">
+                            Contact Us
+                        </Link>
                     </nav>
 
                     {/* Action Buttons */}
