@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
+import { toast } from "react-hot-toast";
 
 export default function ContactUsPage() {
     const [form, setForm] = useState({
@@ -26,11 +27,53 @@ export default function ContactUsPage() {
         setForm({ ...form, consent: e.target.checked });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form submitted:', form);
-        // Add API call or email sending logic here
+
+        if (!form.consent) {
+            toast.error('Please agree to the e-Consent before submitting.');
+            return;
+        }
+
+        const loadingToast = toast.loading('Sending message...');
+
+        try {
+            const res = await fetch('https://formspree.io/f/mwpqpgdv', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    businessName: form.businessName,
+                    fullName: form.fullName,
+                    email: form.email,
+                    phone: form.phone,
+                    message: form.message,
+                    consent: form.consent ? 'Yes' : 'No',
+                }),
+            });
+
+            const data = await res.json();
+
+            if (data.ok || res.ok) {
+                toast.success('Message sent successfully!', { id: loadingToast });
+                setForm({
+                    businessName: '',
+                    fullName: '',
+                    email: '',
+                    phone: '',
+                    message: '',
+                    consent: false,
+                });
+            } else {
+                toast.error(data?.errors?.[0]?.message || 'Something went wrong', { id: loadingToast });
+            }
+        } catch (error) {
+            toast.error('Network error. Please try again.', { id: loadingToast });
+        }
     };
+
 
     return (
         <div className="min-h-screen from-white to-[#f9fafa] text-white relative">
