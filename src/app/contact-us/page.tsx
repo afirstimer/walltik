@@ -142,8 +142,7 @@ export default function ContactUsPage() {
                     <div className="flex items-start space-x-2 text-sm text-gray-300">
                         <Checkbox id="consent" checked={form.consent} onChange={(e) => setForm({ ...form, consent: e.target.checked })} />
                         <label htmlFor="consent" className="leading-snug">
-                            I consent to receive SMS notifications, alerts & occasional marketing communications from eHorizon Systems.
-                            Message frequency varies. Message & data rates may apply. Text HELP for assistance. You can reply STOP to unsubscribe at any time.
+                            By checking this box, I consent to receive occasional marketing communications from Denise Douthard LLC. Message frequency varies. Message & data rates may apply. Text HELP for assistance. You can reply STOP to unsubscribe at any time.
                         </label>
                     </div>
 
