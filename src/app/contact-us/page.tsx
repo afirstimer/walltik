@@ -97,7 +97,7 @@ export default function ContactUsPage() {
                     </div>
 
                     <div className="flex items-start space-x-2 text-sm text-gray-300">
-                        <Checkbox id="consent" checked={form.consent} onCheckedChange={handleCheckbox} />
+                        <Checkbox id="consent" checked={form.consent} onChange={(e) => setForm({ ...form, consent: e.target.checked })} />
                         <label htmlFor="consent" className="leading-snug">
                             I consent to receive SMS notifications, alerts & occasional marketing communications from eHorizon Systems.
                             Message frequency varies. Message & data rates may apply. Text HELP for assistance. You can reply STOP to unsubscribe at any time.
