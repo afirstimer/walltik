@@ -11,7 +11,9 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const showUnderDev = () => {
-        alert('The feature is under maintenance');
+        // navigate to app.walltik.com
+        window.location.href = 'https://app.walltik.com';
+        // alert('The feature is under maintenance');
     }
 
     return (
@@ -163,8 +165,11 @@ export default function Header() {
                                 <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
                                     Pricing
                                 </Link>
+                                <Link href="/contact-us" className="text-gray-700 hover:text-gray-900 font-medium">
+                                    Contact Us
+                                </Link>
                                 <div className="pt-4 space-y-2">
-                                    <Button variant="ghost" className="w-full justify-start">
+                                    <Button variant="ghost" className="w-full justify-start" onClick={() => showUnderDev()}>
                                         Sign In
                                     </Button>
                                     <Button className="w-full bg-gradient-purple-pink text-white">
