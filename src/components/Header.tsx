@@ -11,9 +11,8 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const showUnderDev = () => {
-        // navigate to app.walltik.com
-        window.location.href = 'https://app.walltik.com';
-        // alert('The feature is under maintenance');
+        const appURL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.walltik.com';
+        window.location.href = appURL;
     }
 
     return (
