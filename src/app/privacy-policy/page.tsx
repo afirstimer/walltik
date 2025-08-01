@@ -11,7 +11,7 @@ const PrivacyPolicyPage: React.FC = () => {
                 <p className="text-sm text-gray-500 mb-8">Last updated: November 05, 2024</p>
 
                 <p className="mb-4">
-                    Welcome to walltik.com (hereinafter, the "Website") owned and managed by Denise Douthard LLC., a limited liability company
+                    Welcome to walltik.com (hereinafter, the "Website") owned and managed by PRIME 1641, LLC.., a limited liability company
                     incorporated under the laws of the state of United States (hereinafter, “WallTik”, “We” or “Us”).
                 </p>
 

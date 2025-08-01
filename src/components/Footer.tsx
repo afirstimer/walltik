@@ -38,8 +38,9 @@ export default function Footer() {
                             />
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Denise Douthard LLC
-                            <br />640 Westminster Ave Apt 2, Venice, CA, 90291
+                            PRIME 1641, LLC.
+                            <br />14331 COMMERCE WAY
+                            MIAMI LAKES, FL 33016
                             <br />Email: support@walltik.com
                             Phone: (+1)-510-345-5402
                         </p>
