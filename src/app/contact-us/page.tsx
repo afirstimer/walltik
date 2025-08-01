@@ -142,7 +142,7 @@ export default function ContactUsPage() {
                     <div className="flex items-start space-x-2 text-sm text-gray-300">
                         <Checkbox id="consent" checked={form.consent} onChange={(e) => setForm({ ...form, consent: e.target.checked })} />
                         <label htmlFor="consent" className="leading-snug">
-                            By checking this box, I consent to receive occasional marketing communications from PRIME 1641, LLC.. Message frequency varies. Message & data rates may apply. Text HELP for assistance. You can reply STOP to unsubscribe at any time.
+                            By checking this box, I consent to receive occasional marketing communications from WallTik. Message frequency varies. Message & data rates may apply. Text HELP for assistance. You can reply STOP to unsubscribe at any time.
                         </label>
                     </div>
 
