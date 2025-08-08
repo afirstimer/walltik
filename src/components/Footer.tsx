@@ -41,7 +41,7 @@ export default function Footer() {
                             Denise Douthard LLC,
                             <br />640 WESTMINSTER AVE APT 2 VENICE, CA 90291
                             <br />Email: support@walltik.com
-                            Phone: (+1)-510-345-5402
+                            <br />Phone: (+1)-510-345-5402
                         </p>
                         <div className="flex space-x-4 mt-6">
                             <Link href="#" className="text-gray-400 hover:text-white">
