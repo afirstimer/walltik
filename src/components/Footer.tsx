@@ -38,7 +38,7 @@ export default function Footer() {
                             />
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            PRIME 1641, LLC.
+                            Denise Douthard LLC,
                             <br />14331 COMMERCE WAY
                             MIAMI LAKES, FL 33016
                             <br />Email: support@walltik.com
