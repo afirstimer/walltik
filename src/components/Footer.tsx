@@ -39,8 +39,7 @@ export default function Footer() {
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Denise Douthard LLC,
-                            <br />14331 COMMERCE WAY
-                            MIAMI LAKES, FL 33016
+                            <br />640 WESTMINSTER AVE APT 2 VENICE, CA 90291
                             <br />Email: support@walltik.com
                             Phone: (+1)-510-345-5402
                         </p>
