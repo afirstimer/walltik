@@ -11,7 +11,7 @@ const TermOfServicePage: React.FC = () => {
                 <p className="text-sm text-gray-500 mb-8">Last updated: November 05, 2024</p>
 
                 <p className="mb-4">
-                    Welcome to walltik.com (hereinafter, the "Website") owned and managed by PRIME 1641, LLC., a limited liability company incorporated under the laws of the state of Israel (hereinafter, “WallTik”), “We” or “Us”).
+                    Welcome to walltik.com (hereinafter, the "Website") owned and managed by Denise Douthard LLC., a limited liability company incorporated under the laws of the state of Israel (hereinafter, “WallTik”), “We” or “Us”).
                 </p>
 
                 <h2 className="text-2xl font-semibold mt-8 mb-4">General Terms</h2>
@@ -274,7 +274,7 @@ const TermOfServicePage: React.FC = () => {
                 <p className="mb-4 ms-3">
                     Intellectual Property Rights
                 </p>
-                By registering for and using the services provided on the WallTik Website, you acknowledge and agree that PRIME 1641, LLC. (and its affiliates, licensors, and partners where applicable) retains all ownership rights, title, and interest in and to all intellectual property relating to the Website and the services offered, including but not limited to:
+                By registering for and using the services provided on the WallTik Website, you acknowledge and agree that Denise Douthard LLC. (and its affiliates, licensors, and partners where applicable) retains all ownership rights, title, and interest in and to all intellectual property relating to the Website and the services offered, including but not limited to:
                 <p className="mb-4 ms-3">
                     All software, systems, algorithms, databases, and source code;
 
@@ -294,7 +294,7 @@ const TermOfServicePage: React.FC = () => {
                 These rights are protected under international copyright, trademark, patent, and trade secret laws.
                 You further acknowledge that:
                 <p className="mb-4 ms-3">
-                    The WallTik name, logo, and other trademarks displayed on the Website (whether registered or not) are the property of PRIME 1641, LLC..
+                    The WallTik name, logo, and other trademarks displayed on the Website (whether registered or not) are the property of Denise Douthard LLC..
 
                 </p>
                 <p className="mb-4 ms-3">
