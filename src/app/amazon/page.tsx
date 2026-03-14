@@ -8,14 +8,24 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 
 export default function AmazonPage() {
-    const heroTitle = {
-        title1: "All-in-One",
-        title2: "Software",
-        title3: "for Amazon Sellers",
-        description: "Optimize and Automate Your Amazon Workflow",
-        image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777336/Generated_Image_lp259wlp259wlp25_ofzjzo.png",
-        url: ""
-    }
+    const heroSlides = [
+        {
+            title1: "Amazon Seller",
+            title2: "Automation Software",
+            title3: "for Multi-Platform Management",
+            description: "Optimize and automate your Amazon workflow with WallTik. Manage inventory, orders, and product sourcing across multiple Amazon accounts and regions with AI-powered tools.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777336/Generated_Image_lp259wlp259wlp25_ofzjzo.png",
+            url: "#"
+        },
+        {
+            title1: "Multi-Account",
+            title2: "Amazon Management",
+            title3: "Dashboard",
+            description: "Manage multiple Amazon seller accounts across US, UK, and EU regions from one centralized dashboard. Automate order processing, inventory sync, and performance tracking.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png",
+            url: "#"
+        }
+    ];
 
     const features = [
         {
@@ -42,7 +52,7 @@ export default function AmazonPage() {
         <div className="min-h-screen">
             <Header />
             <main>
-                <HeroSection title={heroTitle} />
+                <HeroSection slides={heroSlides} />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />
