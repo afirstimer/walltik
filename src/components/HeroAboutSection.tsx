@@ -60,7 +60,7 @@ export default function HeroAboutSection({ title }: HeroSectionProps) {
                         {/* Floating elements */}
                         <div className="absolute top-4 right-4 z-20">
                             <img
-                                src="https://ext.same-assets.com/1385443775/3995105860.svg"
+                                src="/tiktok.svg"
                                 alt="TikTok"
                                 className="w-12 h-12"
                             />
@@ -68,7 +68,7 @@ export default function HeroAboutSection({ title }: HeroSectionProps) {
 
                         <div className="absolute bottom-4 left-4 z-20">
                             <img
-                                src="https://ext.same-assets.com/1385443775/1275887703.svg"
+                                src="/analytics.svg"
                                 alt="Analytics"
                                 className="w-16 h-16"
                             />
