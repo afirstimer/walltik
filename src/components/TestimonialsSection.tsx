@@ -98,7 +98,7 @@ export default function TestimonialsSection() {
                         Join thousands of successful entrepreneurs using Walltik
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <div className="bg-white rounded-lg p-4 shadow-lg">
+                        <div className="rounded-lg p-4 shadow-lg">
                             <img
                                 src="/dashboard.svg"
                                 alt="Walltik Dashboard"
