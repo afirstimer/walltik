@@ -26,11 +26,6 @@ export default function FeaturesSection({ features }: FeatureSectionProps) {
                             {/* Content */}
                             <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                                 <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700 mb-4">
-                                    <img
-                                        src="https://ext.same-assets.com/1385443775/375037467.gif"
-                                        alt="Animation"
-                                        className="w-3 h-3 mr-2"
-                                    />
                                     {feature.badge}
                                 </div>
 
