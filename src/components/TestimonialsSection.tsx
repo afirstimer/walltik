@@ -6,7 +6,7 @@ export default function TestimonialsSection() {
         {
             name: "Sarah Chen",
             role: "TikTok Shop Owner",
-            image: "",
+            image: "/Sarah.jpg",
             rating: 5,
             text: "Walltik has completely transformed my TikTok shop. The automation saves me hours every day, and my sales have increased by 300%!"
         },
