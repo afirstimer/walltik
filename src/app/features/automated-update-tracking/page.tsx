@@ -7,14 +7,24 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 
 export default function AutomatedUpdateTrackingPage() {
-    const heroTitle = {
-        title1: "Automated Update Tracking",
-        title2: "Service",
-        title3: "",
-        description: "Track product prices and availability across multiple suppliers and online stores. Get notified of any price drops or availability changes.",
-        image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749285642/Generated_Image_1xu2sx1xu2sx1xu2_a81xkc.jpg",
-        url: ""
-    }
+    const heroSlides = [
+        {
+            title1: "Automated Update",
+            title2: "Tracking Service",
+            title3: "for E-commerce Sellers",
+            description: "Track product prices and availability across multiple suppliers and online stores. Get notified of price drops and availability changes with automated tracking updates.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749285642/Generated_Image_1xu2sx1xu2sx1xu2_a81xkc.jpg",
+            url: "#"
+        },
+        {
+            title1: "Real-Time",
+            title2: "Order Tracking",
+            title3: "Automation",
+            description: "Automatically update tracking numbers for your orders across multiple logistics sources. Streamline fulfillment visibility with real-time sync integrated into your desktop client.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749288099/Generated_Image_3p9y003p9y003p9y_ki8xtm.jpg",
+            url: "#"
+        }
+    ];
 
     const features = [
         {
@@ -41,7 +51,7 @@ export default function AutomatedUpdateTrackingPage() {
         <div className="min-h-screen">
             <Header />
             <main>
-                <HeroSection title={heroTitle} />
+                <HeroSection slides={heroSlides} />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />
