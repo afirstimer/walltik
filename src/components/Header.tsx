@@ -126,7 +126,7 @@ export default function Header() {
                         <Button variant="ghost" className="text-gray-700 hover:text-gray-900" onClick={() => showUnderDev()}>
                             Sign In
                         </Button>
-                        <Button className="bg-gradient-purple-pink text-white hover:opacity-90">
+                        <Button className="bg-gradient-purple-pink text-white hover:opacity-90" onClick={() => showUnderDev()}>
                             Get started
                         </Button>
                     </div>
