@@ -8,14 +8,24 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 
 export default function EbayPage() {
-    const heroTitle = {
-        title1: "All-in-One",
-        title2: "Software",
-        title3: "for EBay Sellers",
-        description: "Unify and Simplify Your eBay Operations",
-        image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777009/Generated_Image_5juua25juua25juu_oir8l2.png",
-        url: ""
-    }
+    const heroSlides = [
+        {
+            title1: "eBay Seller",
+            title2: "Automation Software",
+            title3: "for Multi-Channel Management",
+            description: "Unify and simplify your eBay operations with WallTik. Automatically sync product listings, orders, and inventory across eBay, Amazon, and Walmart from one dashboard.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777009/Generated_Image_5juua25juua25juu_oir8l2.png",
+            url: "#"
+        },
+        {
+            title1: "Multi-Channel",
+            title2: "eBay Management",
+            title3: "Dashboard",
+            description: "Consolidate eBay, Amazon, and Walmart operations in one unified software system. Automate order processing, inventory sync, and track performance across all platforms.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png",
+            url: "#"
+        }
+    ];
 
     const features = [
         {
@@ -42,7 +52,7 @@ export default function EbayPage() {
         <div className="min-h-screen">
             <Header />
             <main>
-                <HeroSection title={heroTitle} />
+                <HeroSection slides={heroSlides} />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />
