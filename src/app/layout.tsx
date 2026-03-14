@@ -5,6 +5,8 @@ import ClientBody from "./ClientBody";
 import SessionWrapper from "@/components/SessionWrapper";
 import { Toaster } from "react-hot-toast"
 import Script from "next/script"
+import { CookieConsentProvider } from "@/contexts/CookieConsentContext";
+import CookieConsent from "@/components/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,9 +72,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body suppressHydrationWarning className="antialiased">
-        <SessionWrapper>
-          <ClientBody>{children}</ClientBody>
-        </SessionWrapper>
+        <CookieConsentProvider>
+          <SessionWrapper>
+            <ClientBody>{children}</ClientBody>
+            <CookieConsent />
+          </SessionWrapper>
+        </CookieConsentProvider>
         <Toaster position="top-right" />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-G40ZBWZD2L`}
