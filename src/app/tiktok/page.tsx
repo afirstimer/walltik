@@ -8,14 +8,24 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 
 export default function TiktokPage() {
-    const heroTitle = {
-        title1: "All-in-One",
-        title2: "Software",
-        title3: "for TikTok Sellers",
-        description: "Seamless Integration with TikTok Shop API",
-        image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777422/Generated_Image_lq0n4alq0n4alq0n_qot3vr.png",
-        url: ""
-    }
+    const heroSlides = [
+        {
+            title1: "TikTok Shop",
+            title2: "Automation Software",
+            title3: "for Multi-Channel Selling",
+            description: "Seamless integration with TikTok Shop API for managing orders, products, revenues, and shop performance from one centralized dashboard.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777422/Generated_Image_lq0n4alq0n4alq0n_qot3vr.png",
+            url: "#"
+        },
+        {
+            title1: "Multi-Shop",
+            title2: "TikTok Management",
+            title3: "Dashboard",
+            description: "Manage multiple TikTok shops with automated order processing, product sync, and performance tracking. Perfect for scaling your TikTok business.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748792541/Generated_Image_x367yax367yax367_k9r4dv.png",
+            url: "#"
+        }
+    ];
 
     const features = [
         {
@@ -42,7 +52,7 @@ export default function TiktokPage() {
         <div className="min-h-screen">
             <Header />
             <main>
-                <HeroSection title={heroTitle} />
+                <HeroSection slides={heroSlides} />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />

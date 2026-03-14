@@ -7,14 +7,24 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 
 export default function BuyingServicePage() {
-    const heroTitle = {
-        title1: "Buy for Me",
-        title2: "Service",
-        title3: "",
-        description: "Amazon, Sephora, Walmart",
-        image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749286988/Generated_Image_tvb7xotvb7xotvb7_izegj6.jpg",
-        url: ""
-    }
+    const heroSlides = [
+        {
+            title1: "Buy for Me",
+            title2: "Service",
+            title3: "for Global Shopping",
+            description: "Walltik handles purchasing, payment, and tracking for Amazon, Sephora, and Walmart. Perfect for customers who cannot purchase or ship directly.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749286988/Generated_Image_tvb7xotvb7xotvb7_izegj6.jpg",
+            url: "#"
+        },
+        {
+            title1: "Automated",
+            title2: "Purchasing Service",
+            title3: "with AI Tools",
+            description: "Submit product requests with AI-powered automation. Walltik handles availability checks, order submission, payment, and automatic tracking updates.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749287294/Generated_Image_qryng9qryng9qryn_c0bwf9.jpg",
+            url: "#"
+        }
+    ];
 
     const features = [
         {
@@ -41,7 +51,7 @@ export default function BuyingServicePage() {
         <div className="min-h-screen">
             <Header />
             <main>
-                <HeroSection title={heroTitle} />
+                <HeroSection slides={heroSlides} />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />

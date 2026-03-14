@@ -7,14 +7,24 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 
 export default function ResourcesPage() {
-    const heroTitle = {
-        title1: "Extension",
-        title2: "Service",
-        title3: "",
-        description: " Product Checker Extension (Amazon, Walmart)",
-        image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749285642/Generated_Image_1xu2sx1xu2sx1xu2_a81xkc.jpg",
-        url: ""
-    }
+    const heroSlides = [
+        {
+            title1: "E-commerce",
+            title2: "Resources Hub",
+            title3: "for Sellers",
+            description: "Access comprehensive resources, tools, and guides for e-commerce success. Learn about product research, automation, and multi-platform selling strategies.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749285642/Generated_Image_1xu2sx1xu2sx1xu2_a81xkc.jpg",
+            url: "#"
+        },
+        {
+            title1: "Seller",
+            title2: "Education Center",
+            title3: "& Tools",
+            description: "Master e-commerce with our product checker extensions, AI tools, and automation guides. Perfect for dropshippers and online sellers.",
+            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748792639/Generated_Image_1icp8l1icp8l1icp_iueiyf.png",
+            url: "#"
+        }
+    ];
 
     const features = [
         {
@@ -41,7 +51,7 @@ export default function ResourcesPage() {
         <div className="min-h-screen">
             <Header />
             <main>
-                <HeroSection title={heroTitle} />
+                <HeroSection slides={heroSlides} />
                 <FeaturesSection features={features} />
                 <PricingSection />
                 <TestimonialsSection />
