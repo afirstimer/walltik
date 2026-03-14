@@ -6,42 +6,42 @@ export default function TestimonialsSection() {
         {
             name: "Sarah Chen",
             role: "TikTok Shop Owner",
-            image: "/Sarah.png",
+            image: "/sarah-chen.png",
             rating: 5,
             text: "Walltik has completely transformed my TikTok shop. The automation saves me hours every day, and my sales have increased by 300%!"
         },
         {
             name: "Mike Rodriguez",
             role: "E-commerce Entrepreneur",
-            image: "",
+            image: "/mike.png",
             rating: 5,
             text: "The 1-click product import feature is a game-changer. I can now focus on marketing while Walltik handles all the tedious work."
         },
         {
             name: "Emma Thompson",
             role: "Digital Marketer",
-            image: "",
+            image: "/emma.png",
             rating: 5,
             text: "Customer support is exceptional and the AI tools help me create converting product descriptions effortlessly."
         },
         {
             name: "David Kim",
             role: "Online Retailer",
-            image: "",
+            image: "/david.png",
             rating: 5,
             text: "Walltik simplified my entire  workflow. The automated fulfillment is incredibly reliable."
         },
         {
             name: "Lisa Wang",
             role: "TikTok Influencer",
-            image: "",
+            image: "/lisa.png",
             rating: 5,
             text: "Perfect for scaling my TikTok shop business. The analytics and monitoring features give me complete control."
         },
         {
             name: "James Wilson",
             role: " Expert",
-            image: "",
+            image: "/james.png",
             rating: 5,
             text: "I've tried many automation tools, but Walltik is by far the most comprehensive and user-friendly platform."
         }
