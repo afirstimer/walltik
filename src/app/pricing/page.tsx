@@ -293,7 +293,7 @@ export default function PricingPage() {
                         <Card className="border-2 border-gray-200 hover:border-[#30ad94] transition-all">
                             <CardHeader className="text-center">
                                 <div className="w-16 h-16 bg-[#30ad94] rounded-lg mx-auto mb-4 flex items-center justify-center">
-                                    <img src="https://ext.same-assets.com/811604260/3819807474.svg" alt="Marketing" className="w-8 h-8" />
+                                    <img src="/sale.svg" alt="Marketing" className="w-8 h-8" />
                                 </div>
                                 <CardTitle className="text-[#171734]">Sales marketing system</CardTitle>
                                 <div className="text-2xl font-bold text-[#171734]">$9.90 <span className="text-sm font-normal">per month</span></div>
@@ -313,7 +313,7 @@ export default function PricingPage() {
                         <Card className="border-2 border-gray-200 hover:border-[#ca9c5f] transition-all">
                             <CardHeader className="text-center">
                                 <div className="w-16 h-16 bg-[#ca9c5f] rounded-lg mx-auto mb-4 flex items-center justify-center">
-                                    <img src="https://ext.same-assets.com/811604260/2270342546.svg" alt="Address" className="w-8 h-8" />
+                                    <img src="/us.svg" alt="Address" className="w-8 h-8" />
                                 </div>
                                 <CardTitle className="text-[#171734]">US Address</CardTitle>
                                 <div className="text-2xl font-bold text-[#171734]">$14.97 <span className="text-sm font-normal">per month</span></div>
@@ -333,7 +333,7 @@ export default function PricingPage() {
                         <Card className="border-2 border-gray-200 hover:border-[#c9215d] transition-all">
                             <CardHeader className="text-center">
                                 <div className="w-16 h-16 bg-[#c9215d] rounded-lg mx-auto mb-4 flex items-center justify-center">
-                                    <img src="https://ext.same-assets.com/811604260/2657913414.svg" alt="Trading Hub" className="w-8 h-8" />
+                                    <img src="/ai.svg" alt="Trading Hub" className="w-8 h-8" />
                                 </div>
                                 <CardTitle className="text-[#171734]">AI Trading hub</CardTitle>
                                 <div className="text-2xl font-bold text-[#171734]">$14.97 <span className="text-sm font-normal">per month</span></div>
