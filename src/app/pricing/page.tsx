@@ -56,14 +56,14 @@ export default function PricingPage() {
 
                     {/* Platform Logos */}
                     <div className="flex items-center justify-center space-x-8 mb-16 grayscale opacity-60">
-                        <img src="https://ext.same-assets.com/811604260/1810314245.svg" alt="Shopify" className="h-8" />
-                        <img src="https://ext.same-assets.com/811604260/3059418399.svg" alt="eBay" className="h-8" />
-                        <img src="https://ext.same-assets.com/811604260/1944600275.svg" alt="Facebook" className="h-8" />
-                        <img src="https://ext.same-assets.com/811604260/2521572639.svg" alt="Amazon" className="h-8" />
-                        <img src="https://ext.same-assets.com/811604260/928475316.svg" alt="Wix" className="h-8" />
-                        <img src="https://ext.same-assets.com/811604260/1404807485.svg" alt="WooCommerce" className="h-8" />
-                        <img src="https://ext.same-assets.com/811604260/3383352906.svg" alt="Etsy" className="h-8" />
-                        <img src="https://ext.same-assets.com/811604260/1382701592.svg" alt="TikTok" className="h-8" />
+                        <img src="/shopify.svg" alt="Shopify" className="h-8" />
+                        <img src="/ebay.svg" alt="eBay" className="h-8" />
+                        <img src="/facebook.svg" alt="Facebook" className="h-8" />
+                        <img src="/amazon.svg" alt="Amazon" className="h-8" />
+                        <img src="/wix.svg" alt="Wix" className="h-8" />
+                        <img src="/woo.svg" alt="WooCommerce" className="h-8" />
+                        <img src="/etsy.svg" alt="Etsy" className="h-8" />
+                        <img src="/tiktok.svg" alt="TikTok" className="h-8" />
                     </div>
 
                     {/* Billing Toggle */}
