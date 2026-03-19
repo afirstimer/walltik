@@ -55,7 +55,7 @@ export default function Header() {
                             Login
                         </Button>
                         <Button className="bg-gradient-purple-pink text-white hover:opacity-90" onClick={() => window.location.href = 'https://deals.walltik.com'}>
-                            Start Saving
+                            Start 
                         </Button>
                     </div>
 
@@ -94,7 +94,7 @@ export default function Header() {
                                         Login
                                     </Button>
                                     <Button className="w-full bg-gradient-purple-pink text-white" onClick={() => window.location.href = 'https://deals.walltik.com'}>
-                                        Start Saving
+                                        Find Deals
                                     </Button>
                                 </div>
                             </div>
