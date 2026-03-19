@@ -10,28 +10,28 @@ import {
 export default function FAQSection() {
     const faqs = [
         {
-            question: "What is Walltik TikTok Shop automation?",
-            answer: "Walltik TikTok Shop automation is a comprehensive platform that automates your entire TikTok shop  business. From product research and import to order fulfillment and customer service, we handle everything so you can focus on growing your business."
+            question: "What is Walltik price comparison platform?",
+            answer: "Walltik is a comprehensive price comparison and deals discovery platform that helps you find the best prices across multiple stores. We aggregate deals from Shopee, Amazon, TikTok Shop and more to help you save money on every purchase."
         },
         {
-            question: "How does the 1-click product import work?",
-            answer: "Our 1-click product import feature allows you to instantly add products from over 25 supported suppliers to your TikTok shop. Simply click on any product you like, and we'll automatically import all details including descriptions, images, videos, and pricing information."
+            question: "How does the price comparison work?",
+            answer: "Our platform searches across multiple stores in real-time to show you the current prices for any product. We display all available options including discounts, shipping costs, and seller ratings so you can make informed decisions."
         },
         {
-            question: "What is included in the automated fulfillment?",
-            answer: "Our automated fulfillment includes order processing, inventory management, supplier communication, shipping coordination, tracking number updates, and return handling. You can sit back and collect profits while we manage the entire fulfillment process."
+            question: "Is Walltik really free to use?",
+            answer: "Yes! Walltik offers a free plan with basic price comparison and deal discovery features. For unlimited searches, price alerts, and advanced features, you can upgrade to our Premium or Pro plans."
         },
         {
-            question: "Can I try Walltik before committing to a plan?",
-            answer: "Yes! We offer a 14-day trial for just $1. You can test all features and see how Walltik transforms your TikTok shop business before choosing a monthly or annual plan. Cancel anytime during the trial period."
+            question: "Which stores and platforms does Walltik support?",
+            answer: "Walltik supports major e-commerce platforms including Shopee, Amazon, TikTok Shop, eBay, Lazada, and many more. We continuously add new stores to ensure you get the best price comparison across all your favorite shopping destinations."
         },
         {
-            question: "Which suppliers does Walltik support?",
-            answer: "Walltik supports over 25 trusted global suppliers including AliExpress, Amazon, Walmart, CJ , Oberlo, and many more. We continuously add new suppliers to ensure you have access to the best products and fastest shipping times."
+            question: "How do price drop alerts work?",
+            answer: "You can set up alerts for any product you're interested in. When the price drops or a new deal becomes available, we'll notify you immediately via email or push notification so you never miss a great deal."
         },
         {
-            question: "How does the AI marketing tool work?",
-            answer: "Our AI marketing tool analyzes successful TikTok shop layouts and creates optimized store designs and product titles for maximum conversion. It uses machine learning to understand what works best for TikTok audiences and automatically generates compelling content."
+            question: "Can I use Walltik on my mobile phone?",
+            answer: "Yes! Walltik is fully responsive and works perfectly on mobile devices. You can compare prices, find deals, and set alerts on the go with our mobile-optimized platform."
         }
     ];
 
@@ -43,7 +43,7 @@ export default function FAQSection() {
                         Frequently asked questions
                     </h2>
                     <p className="text-lg text-gray-600">
-                        Everything you need to know about Walltik TikTok Shop automation
+                        Everything you need to know about Walltik price comparison and deals
                     </p>
                 </div>
 
@@ -60,7 +60,7 @@ export default function FAQSection() {
                     ))}
                 </Accordion>
 
-                <div className="mt-12 text-center">
+                {/* <div className="mt-12 text-center">
                     <div className="bg-gradient-navy text-white rounded-2xl p-8">
                         <h3 className="text-xl font-bold mb-4">
                             Start your Walltik trial today
@@ -72,7 +72,7 @@ export default function FAQSection() {
                             Start 14-day trial for $1
                         </button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

@@ -11,58 +11,55 @@ export default function PricingSection() {
 
     const plans = [
         {
-            name: "Starter",
-            products: "Import 200",
-            monthlyPrice: 19.90,
-            annualPrice: 14.90,
-            savings: 84,
+            name: "Free",
+            products: "Basic Deals",
+            monthlyPrice: 0,
+            annualPrice: 0,
+            savings: 0,
             popular: false,
             features: [
-                "Product Importer",
-                "Price and Stock Monitor",
-                "Product Research Tool",
-                "Draft Manager",
-                "Products Manager",
-                "Product Image Editor",
-                "Smart Filter System",
-                "Extension: 'One-Click Drafts' Creator",
-                "24/7 Support",
-                "All Supported Suppliers",
-                "Walltik Academy"
+                "Price Comparison",
+                "Deal Discovery",
+                "Basic Search",
+                "5 Searches per day",
+                "Limited Categories",
+                "Community Support"
             ]
         },
         {
-            name: "Advanced",
-            products: "Start 500",
-            monthlyPrice: 39.90,
-            annualPrice: 29.90,
-            savings: 120,
+            name: "Premium",
+            products: "Unlimited Deals",
+            monthlyPrice: 9.90,
+            annualPrice: 7.90,
+            savings: 24,
             popular: true,
             features: [
-                "Everything in Starter",
-                "AI SmartEdit",
-                "Sourcing Product Agent Service",
-                "Priority Support",
-                "Advanced Analytics",
-                "Bulk Operations",
-                "Custom Branding"
+                "Everything in Free",
+                "Unlimited Searches",
+                "All Categories",
+                "Price Drop Alerts",
+                "Deal Notifications",
+                "Advanced Filters",
+                "Price History",
+                "Priority Support"
             ]
         },
         {
-            name: "Master",
-            products: "Advanced k",
-            monthlyPrice: 59.90,
-            annualPrice: 49.90,
-            savings: 180,
+            name: "Pro",
+            products: "Professional",
+            monthlyPrice: 19.90,
+            annualPrice: 15.90,
+            savings: 48,
             popular: false,
             features: [
-                "Everything in Advanced",
-                "Dedicated Account Manager",
-                "Custom Integrations",
-                "White Label Solution",
+                "Everything in Premium",
                 "API Access",
-                "Advanced Automation",
-                "Priority Processing"
+                "Custom Alerts",
+                "Bulk Price Tracking",
+                "Advanced Analytics",
+                "Dedicated Support",
+                "Early Access to Deals",
+                "Custom Dashboard"
             ]
         }
     ];
@@ -71,10 +68,6 @@ export default function PricingSection() {
         <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                        Your freedom is our success, let's start the journey together
-                    </h2>
-
                     {/* Toggle */}
                     <div className="flex items-center justify-center mb-12">
                         <div className="bg-gray-100 p-1 rounded-lg flex">

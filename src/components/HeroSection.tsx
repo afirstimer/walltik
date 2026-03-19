@@ -64,11 +64,11 @@ export default function HeroSection({ slides }: HeroSectionProps) {
 
                                     {slide.url && (
                                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                            <Button size="lg" className="bg-gradient-purple-pink text-white px-8 py-3 text-lg font-semibold hover:opacity-90">
-                                                GET STARTED FREE
+                                            <Button size="lg" className="bg-gradient-purple-pink text-white px-8 py-3 text-lg font-semibold hover:opacity-90" onClick={() => window.location.href = slide.url}>
+                                                EXPLORE DEALS
                                             </Button>
                                             <div className="text-sm text-gray-500 self-center">
-                                                14 day trial for $1 • Cancel any time
+                                                Start saving money today • Free to use
                                             </div>
                                         </div>
                                     )}
@@ -90,7 +90,7 @@ export default function HeroSection({ slides }: HeroSectionProps) {
                                     <div className="relative z-10">
                                         <img
                                             src={slide.image}
-                                            alt={`WallTik ${slide.title2} dashboard - ${slide.title1} ${slide.title3} interface showing e-commerce automation tools`}
+                                            alt={`WallTik ${slide.title2} interface showing price comparison and deals discovery`}
                                             className="w-full h-auto"
                                             loading="eager"
                                         />
@@ -99,16 +99,16 @@ export default function HeroSection({ slides }: HeroSectionProps) {
                                     {/* Floating elements */}
                                     <div className="absolute top-4 right-4 z-20">
                                         <img
-                                            src="/tiktok.svg"
-                                            alt="TikTok Shop integration icon"
+                                            src="/amazon-icon.svg"
+                                            alt="Amazon price comparison icon"
                                             className="w-12 h-12"
                                         />
                                     </div>
 
                                     <div className="absolute bottom-4 left-4 z-20">
                                         <img
-                                            src="/analytics.svg"
-                                            alt="E-commerce analytics dashboard icon"
+                                            src="/TikTok-Shop.svg"
+                                            alt="TikTok Shop deals icon"
                                             className="w-16 h-16"
                                         />
                                     </div>

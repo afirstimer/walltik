@@ -19,9 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WallTik - TikTok Shop Automation Software | Multi-Platform E-commerce Management",
-  description: "Automate your TikTok Shop, Amazon, and eBay businesses with WallTik. Manage inventory, orders, and product sourcing with AI-powered tools. Start your 14-day $1 trial today.",
-  keywords: ["TikTok Shop automation", "e-commerce software", "Amazon seller tools", "eBay management", "product sourcing automation", "multi-platform selling", "inventory management"],
+  title: "WallTik - Find Best Deals & Compare Prices | Shop Smarter",
+  description: "Compare prices from multiple stores, discover hot deals, and save more on every purchase. Find the cheapest products across Shopee, Amazon, and more.",
+  keywords: ["best deals", "price comparison", "cheapest products", "discount finder", "compare prices", "hot deals", "save money", "shopping deals"],
   authors: [{ name: "WallTik" }],
   creator: "WallTik",
   publisher: "WallTik",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "WallTik - TikTok Shop Automation & E-commerce Management Software",
-    description: "All-in-one platform to automate your TikTok Shop, Amazon, and eBay businesses. AI-powered tools for inventory, orders, and product sourcing.",
+    title: "WallTik - Find Best Deals & Compare Prices Across Multiple Stores",
+    description: "Compare prices from multiple stores, discover hot deals, and save more on every purchase. Shop smarter with WallTik.",
     url: 'https://walltik.com',
     siteName: 'WallTik',
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'WallTik - E-commerce Automation Platform',
+        alt: 'WallTik - Best Deals & Price Comparison Platform',
       },
     ],
     locale: 'en_US',
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WallTik - TikTok Shop Automation Software',
-    description: 'Automate your e-commerce business across TikTok, Amazon, and eBay with AI-powered tools.',
+    title: 'WallTik - Find Best Deals & Compare Prices',
+    description: 'Compare prices from multiple stores and discover hot deals. Save more on every purchase.',
     images: ['/twitter-image.jpg'],
   },
   robots: {
@@ -97,32 +97,24 @@ export default function RootLayout({
           {`
           {
             "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
+            "@type": "WebSite",
             "name": "WallTik",
-            "description": "Multi-platform e-commerce automation software for TikTok Shop, Amazon, and eBay sellers",
+            "description": "Price comparison and deals platform to find the best prices across multiple stores and save money on every purchase",
             "url": "https://walltik.com",
-            "applicationCategory": "BusinessApplication",
+            "applicationCategory": "ShoppingApplication",
             "operatingSystem": "Web",
-            "offers": {
-              "@type": "Offer",
-              "price": "1",
-              "priceCurrency": "USD",
-              "description": "14-day trial period",
-              "availability": "https://schema.org/InStock"
-            },
             "creator": {
               "@type": "Organization",
               "name": "WallTik",
               "url": "https://walltik.com"
             },
             "featureList": [
-              "TikTok Shop automation",
-              "Amazon seller tools", 
-              "eBay management",
-              "Product sourcing automation",
-              "Inventory management",
-              "Order processing",
-              "Multi-platform integration"
+              "Price comparison across stores",
+              "Deal discovery and discounts", 
+              "Hot deals aggregation",
+              "Multi-platform shopping",
+              "Smart shopping tools",
+              "Best price finder"
             ],
             "screenshot": "https://res.cloudinary.com/dqg6ernew/image/upload/v1748666448/Gemini_Generated_Image_jmmp98jmmp98jmmp_bx3hqn.png",
             "aggregateRating": {

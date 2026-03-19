@@ -32,88 +32,16 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-8">
-                        <div className="group">
-                            <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
-                                Why Walltik ?
-                                <ChevronDown className="ml-1 h-4 w-4" />
-                            </button>
+                        <Link href="#deals" className="text-gray-700 hover:text-gray-900 font-medium">
+                            Deals
+                        </Link>
 
-                            <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all z-50 pl-28 m-0 pt-5 pb-5  space-y-3 grid grid-cols-5">
-                                <div className="flex items-start space-x-2 pl-28"></div>
-                                <div className="flex items-start space-x-2 p-3">
-                                    <Link href="/features/extension-services" className='flex items-center'>
-                                        <Puzzle className="w-5 h-5 text-purple-600" />
-                                        <p className="text-sm text-gray-700 ml-2">
-                                            Extension Services
-                                        </p>
-                                    </Link>
-                                </div>
-                                <div className="flex items-start space-x-2 p-3">
-                                    <Link href="/features/buying-service" className='flex items-center'>
-                                        <ShoppingCart className="w-5 h-5 text-purple-600" />
-                                        <p className="text-sm text-gray-700 ml-2">
-                                            Buying Service
-                                        </p>
-                                    </Link>
-                                </div>
-                                <div className="flex items-start space-x-2 p-3">
-                                    <Link href="/features/automated-update-tracking" className='flex items-center'>
-                                        <RefreshCw className="w-5 h-5 text-purple-600" />
-                                        <p className="text-sm text-gray-700 ml-2">
-                                            Automated Update Tracking
-                                        </p>
-                                    </Link>
-                                </div>
-                                <div className="flex items-start space-x-2 pr-28"></div>
-                            </div>
-                        </div>
+                        <Link href="#categories" className="text-gray-700 hover:text-gray-900 font-medium">
+                            Categories
+                        </Link>
 
-                        <div className="group">
-                            <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
-                                Integrations
-                                <ChevronDown className="ml-1 h-4 w-4" />
-                            </button>
-                            {/* Dropdown Menu */}
-                            <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all pl-28 m-0 pt-5 pb-5 grid grid-cols-5 gap-1">
-                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md pl-28 cursor-pointer"></div>
-                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
-                                    <Link href="/tiktok" className='flex items-center'>
-                                        <img src="/TikTok-Shop.svg" alt="TikTok" className="h-8 w-8" />
-                                        <span className="text-xl text-gray-700 ml-2">
-                                            TikTok
-                                        </span>
-                                    </Link>
-                                </div>
-                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
-                                    <Link href="/amazon" className='flex items-center'>
-                                        <img src="/amazon-icon.svg" alt="Amazon" className="h-8 w-8" />
-                                        <span className="text-xl text-gray-700 ml-2">
-                                            Amazon
-                                        </span>
-                                    </Link>
-                                </div>
-                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
-                                    <Link href="/ebay" className='flex items-center'>
-                                        <img src="/ebay-icon.svg" alt="eBay" className="h-8 w-8" />
-                                        <span className="text-xl text-gray-700 ml-2">
-                                            eBay
-                                        </span>
-                                    </Link>
-                                </div>
-                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md pl-28 cursor-pointer"></div>
-                            </div>
-                        </div>
-
-                        <div className="relative group">
-                            <Link href="/suppliers" className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
-                                Suppliers
-                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
-                            </Link>
-                        </div>
-
-
-                        <Link href="/pricing" className="text-gray-700 hover:text-gray-900 font-medium">
-                            Pricing
+                        <Link href="#how-it-works" className="text-gray-700 hover:text-gray-900 font-medium">
+                            How It Works
                         </Link>
 
                         <Link href="/contact-us" className="text-gray-700 hover:text-gray-900 font-medium">
@@ -123,11 +51,11 @@ export default function Header() {
 
                     {/* Action Buttons */}
                     <div className="hidden lg:flex items-center space-x-4">
-                        <Button variant="ghost" className="text-gray-700 hover:text-gray-900" onClick={() => showUnderDev()}>
-                            Sign In
+                        <Button variant="ghost" className="text-gray-700 hover:text-gray-900" onClick={() => window.location.href = 'https://deals.walltik.com'}>
+                            Login
                         </Button>
-                        <Button className="bg-gradient-purple-pink text-white hover:opacity-90" onClick={() => showUnderDev()}>
-                            Get started
+                        <Button className="bg-gradient-purple-pink text-white hover:opacity-90" onClick={() => window.location.href = 'https://deals.walltik.com'}>
+                            Start Saving
                         </Button>
                     </div>
 
@@ -149,30 +77,24 @@ export default function Header() {
                     isMenuOpen && (
                         <div className="lg:hidden">
                             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
-                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                    Why Walltik ?
+                                <Link href="#deals" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                    Deals
                                 </Link>
-                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                    Integrations
+                                <Link href="#categories" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                    Categories
                                 </Link>
-                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                    Suppliers
-                                </Link>
-                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                    Resources
-                                </Link>
-                                <Link href="#" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
-                                    Pricing
+                                <Link href="#how-it-works" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                    How It Works
                                 </Link>
                                 <Link href="/contact-us" className="text-gray-700 hover:text-gray-900 font-medium">
                                     Contact Us
                                 </Link>
                                 <div className="pt-4 space-y-2">
-                                    <Button variant="ghost" className="w-full justify-start" onClick={() => showUnderDev()}>
-                                        Sign In
+                                    <Button variant="ghost" className="w-full justify-start" onClick={() => window.location.href = 'https://deals.walltik.com'}>
+                                        Login
                                     </Button>
-                                    <Button className="w-full bg-gradient-purple-pink text-white">
-                                        Get started
+                                    <Button className="w-full bg-gradient-purple-pink text-white" onClick={() => window.location.href = 'https://deals.walltik.com'}>
+                                        Start Saving
                                     </Button>
                                 </div>
                             </div>
