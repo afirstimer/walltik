@@ -32,11 +32,11 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-8">
-                        <Link href="#deals" className="text-gray-700 hover:text-gray-900 font-medium">
+                        <Link href="https://deals.walltik.com" className="text-gray-700 hover:text-gray-900 font-medium">
                             Deals
                         </Link>
 
-                        <Link href="#categories" className="text-gray-700 hover:text-gray-900 font-medium">
+                        <Link href="https://deals.walltik.com/categories" className="text-gray-700 hover:text-gray-900 font-medium">
                             Categories
                         </Link>
 
@@ -77,10 +77,10 @@ export default function Header() {
                     isMenuOpen && (
                         <div className="lg:hidden">
                             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
-                                <Link href="#deals" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                <Link href="https://deals.walltik.com" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
                                     Deals
                                 </Link>
-                                <Link href="#categories" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
+                                <Link href="https://deals.walltik.com/categories" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
                                     Categories
                                 </Link>
                                 <Link href="#how-it-works" className="block px-3 py-2 text-gray-700 hover:text-gray-900">
