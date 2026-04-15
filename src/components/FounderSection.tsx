@@ -1,27 +1,23 @@
-import Image from "next/image";
 
 export default function FounderSection() {
     const founders = [
         // {
-        //     name: "Denise Douthard",
+        //     name: "Walltik",
         //     role: "Co-Founder & CEO",
-        //     image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749362509/6208222463427461197_igzcqx.jpg", // replace with real URLs
         //     description:
-        //         "Denise Douthard, at 14, she launched his entrepreneurial journey by selling his first product through dropshipping. Seeing its high-reward potential, she dove in and built his career around the model.",
+        //         "Walltik, at 14, she launched his entrepreneurial journey by selling his first product through dropshipping. Seeing its high-reward potential, she dove in and built his career around the model.",
         // },
         {
-            name: "Branson Farrell",
+            name: "Tran Nguyen Thanh",
             role: "Co-Founder & CTO",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749483184/6208222463427461203_cr99y3.jpg",
             description:
-                "Branson Farrell, a tech prodigy, saw the potential in dropshipping and built the fastest, most powerful tool to streamline operations and drive growth.",
+                "Tran Nguyen Thanh, a tech prodigy, saw the potential in dropshipping and built the fastest, most powerful tool to streamline operations and drive growth.",
         },
         {
-            name: "Luke Gill",
+            name: "Tran Quang Khai",
             role: "CMO",
-            image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749483185/6208222463427461202_tgmjof.jpg",
             description:
-                "Luke Gill, a marketing pro with a passion for e-commerce, partnered with Branson Farrell and transformed Walltik from a small startup into the world’s #1 dropshipping automation platform.",
+                "Tran Quang Khai, a marketing pro with a passion for e-commerce, partnered with Tran Nguyen Thanh and transformed Walltik from a small startup into the world's #1 dropshipping automation platform.",
         },
     ];
 
@@ -40,13 +36,6 @@ export default function FounderSection() {
                             key={founder.name}
                             className="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl shadow-lg text-left"
                         >
-                            <Image
-                                src={founder.image}
-                                alt={founder.name}
-                                width={500}
-                                height={500}
-                                className="w-full h-auto rounded-xl mb-4 object-cover"
-                            />
                             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                                 {founder.name}
                             </h3>
