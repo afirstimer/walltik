@@ -19,6 +19,7 @@ export default function Footer() {
         company: [
             { name: 'About Us', href: '/about-us' },
             { name: 'Privacy Policy', href: '/privacy-policy' },
+            { name: 'Refund Policy', href: '/refund-policy' },
             { name: 'Terms of Service', href: '/terms-of-service' },
             { name: 'Data Request', href: '/data-request' }
         ]
