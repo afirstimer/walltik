@@ -11,6 +11,7 @@ type HeroTitle = {
     description: string;
     image: string;
     url: string;
+    button: string;
 }
 
 type HeroSectionProps = {
@@ -64,25 +65,17 @@ export default function HeroSection({ slides }: HeroSectionProps) {
 
                                     {slide.url && (
                                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                            <Button size="lg" className="bg-gradient-purple-pink text-white px-8 py-3 text-lg font-semibold hover:opacity-90">
-                                                GET STARTED FREE
+                                            <Button asChild size="lg" className="bg-gradient-purple-pink text-white px-8 py-3 text-lg font-semibold hover:opacity-90">
+                                                <a href={slide.url}>
+                                                    {slide.button}
+                                                </a>
                                             </Button>
-                                            <div className="text-sm text-gray-500 self-center">
+                                            {/* <div className="text-sm text-gray-500 self-center">
                                                 14 day trial for $1 • Cancel any time
-                                            </div>
+                                            </div> */}
                                         </div>
                                     )}
-                                    {/* if slide is affiliate */}
-                                    {slide.title3 === "Affiliate" && (
-                                        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                            <Button size="lg" className="bg-gradient-purple-pink text-white px-8 py-3 text-lg font-semibold hover:opacity-90">
-                                                START EARNING
-                                            </Button>
-                                            <div className="text-sm text-gray-500 self-center">
-                                                Become an affiliate today
-                                            </div>
-                                        </div>
-                                    )}
+                                    
                                 </div>
 
                                 {/* Right Content - Hero Image */}

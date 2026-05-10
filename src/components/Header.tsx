@@ -38,7 +38,7 @@ export default function Header() {
                                 <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
 
-                            <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all z-50 pl-28 m-0 pt-5 pb-5  space-y-3 grid grid-cols-5">
+                            <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all z-50 pl-28 m-0 pt-5 pb-5 space-y-3 grid grid-cols-5">
                                 <div className="flex items-start space-x-2 pl-28"></div>
                                 <div className="flex items-start space-x-2 p-3">
                                     <Link href="/features/extension-services" className='flex items-center'>
@@ -65,16 +65,6 @@ export default function Header() {
                                     </Link>
                                 </div>
                                 <div className="flex items-start space-x-2 pr-28"></div>
-                            </div>
-                        </div>
-
-                        <div className="group">
-                            <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
-                                Integrations
-                                <ChevronDown className="ml-1 h-4 w-4" />
-                            </button>
-                            {/* Dropdown Menu */}
-                            <div className="absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all pl-28 m-0 pt-5 pb-5 grid grid-cols-5 gap-1">
                                 <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md pl-28 cursor-pointer"></div>
                                 <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
                                     <Link href="/tiktok" className='flex items-center'>
@@ -100,20 +90,28 @@ export default function Header() {
                                         </span>
                                     </Link>
                                 </div>
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md pr-28 cursor-pointer"></div>
                                 <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md pl-28 cursor-pointer"></div>
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
+                                    <Link href="/suppliers" className='flex items-center'>
+                                        <span className="text-xl text-gray-700">
+                                            Suppliers
+                                        </span>
+                                    </Link>
+                                </div>
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md p-3 cursor-pointer">
+                                    <Link href="/pricing" className='flex items-center'>
+                                        <span className="text-xl text-gray-700">
+                                            Pricing
+                                        </span>
+                                    </Link>
+                                </div>
+                                <div className="flex items-center space-x-5 hover:bg-gray-50 rounded-md pr-28 cursor-pointer"></div>
                             </div>
                         </div>
 
-                        <div className="relative group">
-                            <Link href="/suppliers" className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
-                                Suppliers
-                                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
-                            </Link>
-                        </div>
-
-
-                        <Link href="/pricing" className="text-gray-700 hover:text-gray-900 font-medium">
-                            Pricing
+                        <Link href="https://deals.walltik.com" className="text-gray-700 hover:text-gray-900 font-medium">
+                            Claim Premium Coupon
                         </Link>
 
                         <Link href="/contact-us" className="text-gray-700 hover:text-gray-900 font-medium">
