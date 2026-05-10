@@ -15,7 +15,8 @@ export default function EbayPage() {
             title3: "for Multi-Channel Management",
             description: "Unify and simplify your eBay operations with WallTik. Automatically sync product listings, orders, and inventory across eBay, Amazon, and Walmart from one dashboard.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777009/Generated_Image_5juua25juua25juu_oir8l2.png",
-            url: "#"
+            url: "#",
+            button: "Get Started"
         },
         {
             title1: "Multi-Channel",
@@ -23,7 +24,8 @@ export default function EbayPage() {
             title3: "Dashboard",
             description: "Consolidate eBay, Amazon, and Walmart operations in one unified software system. Automate order processing, inventory sync, and track performance across all platforms.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png",
-            url: "#"
+            url: "#",
+            button: "Learn More"
         }
     ];
 

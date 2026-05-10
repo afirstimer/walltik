@@ -14,7 +14,8 @@ export default function ResourcesPage() {
             title3: "for Sellers",
             description: "Access comprehensive resources, tools, and guides for e-commerce success. Learn about product research, automation, and multi-platform selling strategies.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749285642/Generated_Image_1xu2sx1xu2sx1xu2_a81xkc.jpg",
-            url: "#"
+            url: "#",
+            button: "Get Started"
         },
         {
             title1: "Seller",
@@ -22,7 +23,8 @@ export default function ResourcesPage() {
             title3: "& Tools",
             description: "Master e-commerce with our product checker extensions, AI tools, and automation guides. Perfect for dropshippers and online sellers.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748792639/Generated_Image_1icp8l1icp8l1icp_iueiyf.png",
-            url: "#"
+            url: "#",
+            button: "Learn More"
         }
     ];
 

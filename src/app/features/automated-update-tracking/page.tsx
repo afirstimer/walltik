@@ -14,7 +14,8 @@ export default function AutomatedUpdateTrackingPage() {
             title3: "for E-commerce Sellers",
             description: "Track product prices and availability across multiple suppliers and online stores. Get notified of price drops and availability changes with automated tracking updates.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749285642/Generated_Image_1xu2sx1xu2sx1xu2_a81xkc.jpg",
-            url: "#"
+            url: "#",
+            button: "Get Started"
         },
         {
             title1: "Real-Time",
@@ -22,7 +23,8 @@ export default function AutomatedUpdateTrackingPage() {
             title3: "Automation",
             description: "Automatically update tracking numbers for your orders across multiple logistics sources. Streamline fulfillment visibility with real-time sync integrated into your desktop client.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749288099/Generated_Image_3p9y003p9y003p9y_ki8xtm.jpg",
-            url: "#"
+            url: "#",
+            button: "Learn More"
         }
     ];
 

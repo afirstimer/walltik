@@ -14,7 +14,8 @@ export default function ExtensionServicesPage() {
             title3: "for E-commerce Sellers",
             description: "Instantly check pricing and stock status for any product on Amazon and Walmart. AI-powered bulk checking with fast and accurate results.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749285642/Generated_Image_1xu2sx1xu2sx1xu2_a81xkc.jpg",
-            url: "#"
+            url: "#",
+            button: "Get Started"
         },
         {
             title1: "AI-Powered",
@@ -22,7 +23,8 @@ export default function ExtensionServicesPage() {
             title3: "Tools",
             description: "Scan thousands of products with AI algorithms to find profitable items. Identify trends and opportunities before they become saturated in the dropshipping market.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748792639/Generated_Image_1icp8l1icp8l1icp_iueiyf.png",
-            url: "#"
+            url: "#",
+            button: "Learn More"
         }
     ];
 

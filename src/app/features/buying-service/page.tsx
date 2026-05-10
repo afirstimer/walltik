@@ -14,7 +14,8 @@ export default function BuyingServicePage() {
             title3: "for Global Shopping",
             description: "Walltik handles purchasing, payment, and tracking for Amazon, Sephora, and Walmart. Perfect for customers who cannot purchase or ship directly.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749286988/Generated_Image_tvb7xotvb7xotvb7_izegj6.jpg",
-            url: "#"
+            url: "#",
+            button: "Get Started"
         },
         {
             title1: "Automated",
@@ -22,7 +23,8 @@ export default function BuyingServicePage() {
             title3: "with AI Tools",
             description: "Submit product requests with AI-powered automation. Walltik handles availability checks, order submission, payment, and automatic tracking updates.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1749287294/Generated_Image_qryng9qryng9qryn_c0bwf9.jpg",
-            url: "#"
+            url: "#",
+            button: "Learn More"
         }
     ];
 

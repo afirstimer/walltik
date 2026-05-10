@@ -15,7 +15,8 @@ export default function TiktokPage() {
             title3: "for Multi-Channel Selling",
             description: "Seamless integration with TikTok Shop API for managing orders, products, revenues, and shop performance from one centralized dashboard.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777422/Generated_Image_lq0n4alq0n4alq0n_qot3vr.png",
-            url: "#"
+            url: "#",
+            button: "Get Started"
         },
         {
             title1: "Multi-Shop",
@@ -23,7 +24,8 @@ export default function TiktokPage() {
             title3: "Dashboard",
             description: "Manage multiple TikTok shops with automated order processing, product sync, and performance tracking. Perfect for scaling your TikTok business.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748792541/Generated_Image_x367yax367yax367_k9r4dv.png",
-            url: "#"
+            url: "#",
+            button: "Learn More"
         }
     ];
 
