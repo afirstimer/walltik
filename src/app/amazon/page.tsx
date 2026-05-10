@@ -15,7 +15,8 @@ export default function AmazonPage() {
             title3: "for Multi-Platform Management",
             description: "Optimize and automate your Amazon workflow with WallTik. Manage inventory, orders, and product sourcing across multiple Amazon accounts and regions with AI-powered tools.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748777336/Generated_Image_lp259wlp259wlp25_ofzjzo.png",
-            url: "#"
+            url: "#",
+            button: "Get Started"
         },
         {
             title1: "Multi-Account",
@@ -23,7 +24,8 @@ export default function AmazonPage() {
             title3: "Dashboard",
             description: "Manage multiple Amazon seller accounts across US, UK, and EU regions from one centralized dashboard. Automate order processing, inventory sync, and performance tracking.",
             image: "https://res.cloudinary.com/dqg6ernew/image/upload/v1748687994/Gemini_Generated_Image_cjtogqcjtogqcjto_vfpqeo.png",
-            url: "#"
+            url: "#",
+            button: "Learn More"
         }
     ];
 
