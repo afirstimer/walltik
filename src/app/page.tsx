@@ -26,10 +26,10 @@ export default function Home() {
     //   url: "#"
     // },
     {
-      title1: "Earn",
-      title2: "Affiliate Rewards",
-      title3: "Program",
-      description: "Join WallTik's affiliate program and earn rewards. Invite friends, earn vouchers, and use them for e-commerce tools or withdraw cash. Perfect for sellers and marketers.",
+      title1: "Claim",
+      title2: "Premium Coupon",
+      title3: "",
+      description: "Claim premium coupons and unlock exclusive discounts from top brands and online stores. WallTik helps users access verified coupon codes, limited-time deals, and special promotions to maximize savings on every purchase. Fast, simple, and designed for smarter shopping.",
       image: "/voucher_aff.png",
       url: "https://deals.walltik.com",
       button: 'Claim Coupon Now'
