@@ -1,27 +1,27 @@
 
 export default function FounderSection() {
-    const founders = [
+    const founders: { name: string; role: string; description: string }[] = [
         // {
         //     name: "Walltik",
         //     role: "Co-Founder & CEO",
         //     description:
         //         "Walltik, at 14, she launched his entrepreneurial journey by selling his first product through dropshipping. Seeing its high-reward potential, she dove in and built his career around the model.",
         // },
-        {
-            name: "Tran Nguyen Thanh",
-            role: "Co-Founder & CTO",
-            description:
-                "Tran Nguyen Thanh, a tech prodigy, saw the potential in dropshipping and built the fastest, most powerful tool to streamline operations and drive growth.",
-        },
-        {
-            name: "Tran Quang Khai",
-            role: "CMO",
-            description:
-                "Tran Quang Khai, a marketing pro with a passion for e-commerce, partnered with Tran Nguyen Thanh and transformed Walltik from a small startup into the world's #1 dropshipping automation platform.",
-        },
+        // {
+        //     name: "Tran Nguyen Thanh",
+        //     role: "Co-Founder & CTO",
+        //     description:
+        //         "Tran Nguyen Thanh, a tech prodigy, saw the potential in dropshipping and built the fastest, most powerful tool to streamline operations and drive growth.",
+        // },
+        // {
+        //     name: "Tran Quang Khai",
+        //     role: "CMO",
+        //     description:
+        //         "Tran Quang Khai, a marketing pro with a passion for e-commerce, partnered with Tran Nguyen Thanh and transformed Walltik from a small startup into the world's #1 dropshipping automation platform.",
+        // },
     ];
 
-    return (
+    return founders.length > 0 ? (
         <section className="bg-white dark:bg-gray-950 py-16">
             <div className="max-w-7xl mx-auto px-4 text-center">
                 <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white">
@@ -31,7 +31,7 @@ export default function FounderSection() {
                     Meet people behind Walltik, the future of e-commerce sourcing.
                 </p>
                 <div className="mt-10 grid gap-8 sm:grid-cols-2 md:grid-cols-2">
-                    {founders.map((founder) => (
+                    { founders.length > 0 && founders.map((founder) => (
                         <div
                             key={founder.name}
                             className="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl shadow-lg text-left"
@@ -50,5 +50,5 @@ export default function FounderSection() {
                 </div>
             </div>
         </section>
-    );
+    ) : null;
 }
