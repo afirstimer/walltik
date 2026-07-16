@@ -26,13 +26,14 @@ export default function Home() {
     //   url: "#"
     // },
     {
-      title1: "Claim",
-      title2: "Premium Coupon",
+      title1: "Walltik",
+      title2: "Merchant Gateway",
       title3: "",
-      description: "Claim premium coupons and unlock exclusive discounts from top brands and online stores. WallTik helps users access verified coupon codes, limited-time deals, and special promotions to maximize savings on every purchase. Fast, simple, and designed for smarter shopping.",
+      // write description
+      description: "Walltik Merchant Gateway is a platform that allows you to accept payments from your customers. It is a secure and easy to use platform that allows you to accept payments from your customers.",      
       image: "/voucher_aff.png",
-      url: "https://deals.walltik.com",
-      button: 'Claim Coupon Now'
+      url: "https://pay.walltik.com",
+      button: 'Proceed to Payment Gateway'
     }
   ];
 

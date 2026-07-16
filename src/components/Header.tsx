@@ -110,8 +110,8 @@ export default function Header() {
                             </div>
                         </div>
 
-                        <Link href="https://deals.walltik.com" className="text-gray-700 hover:text-gray-900 font-medium">
-                            Claim Premium Coupon
+                        <Link href="https://pay.walltik.com" className="text-gray-700 hover:text-gray-900 font-medium">
+                            Walltik Merchant Gateway
                         </Link>
 
                         <Link href="/contact-us" className="text-gray-700 hover:text-gray-900 font-medium">
